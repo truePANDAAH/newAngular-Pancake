@@ -1,4 +1,4 @@
-# Angular-Pancake
+# newAngular-Pancake
 
 We are going to replicate Pancake Swap .  
 People who are working on this Repo are just studends that want to improve their skills .
