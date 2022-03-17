@@ -1,18 +1,568 @@
 <ngb-carousel>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper wrap1">
+  <ng-template ngbSlide>
+    <div class="col-container">
+      <div class="card">
+        <div class="picsum-img-wrapper pink">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Pink</h5>
+
+          <div class="bttn-container">
+            <div class="copy-text">
+              <input type="text" class="text" value="#ed4b9e"/>
+                <button (click)="callCopyButton()">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="16" 
+                    height="16" 
+                    fill="currentColor" 
+                    class="bi bi-clipboard" 
+                    viewBox="0 0 16 16">
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                  </svg>
+                </button>              
+            </div>
+          </div>
+
+        </div>
       </div>
-      <div class="carousel-caption">
-        <label for="colid">#12345</label>
-        <input type="text" id="colid" placeholder="#12345">
+
+      <div class="card">
+        <div class="picsum-img-wrapper light-pink">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Light pink</h5>
+
+          <div class="bttn-container">
+            <div class="copy-text copy-text2">
+              <input type="text text2" class="text" value="#d7caec"/>
+                <button (click)="callCopyButton2()">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="16" 
+                    height="16" 
+                    fill="currentColor" 
+                    class="bi bi-clipboard" 
+                    viewBox="0 0 16 16">
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                  </svg>
+                </button>              
+            </div>
+          </div>
+
+        </div>
       </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper wrap2">
+
+      <div class="card">
+        <div class="picsum-img-wrapper light-purple-max">
       </div>
-      <div class="carousel-caption">
-        <h3>Title Goes Here</h3>
-        <p>Consectetur tortor volutpat pretium.</p>
+        <div class="card-body">
+          <h5 class="card-title">Light purple max</h5>
+
+          <div class="bttn-container">
+            <div class="copy-text copy-text3">
+              <input type="text" class="text" value="#b8add2"/>
+                <button (click)="callCopyButton3()">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="16" 
+                    height="16" 
+                    fill="currentColor" 
+                    class="bi bi-clipboard" 
+                    viewBox="0 0 16 16">
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                  </svg>
+                </button>              
+            </div>
+          </div>
+
+        </div>
       </div>
-    </ng-template>
-  </ngb-carousel>
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div class="col-container">
+      <div class="card">
+        <div class="picsum-img-wrapper light-purple">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Light purple</h5>
+
+          <div class="bttn-container">
+            <div class="copy-text copy-text4">
+              <input type="text" class="text" value="#7a6eaa"/>
+                <button (click)="callCopyButton4()">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="16" 
+                    height="16" 
+                    fill="currentColor" 
+                    class="bi bi-clipboard" 
+                    viewBox="0 0 16 16">
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                  </svg>
+                </button>              
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="picsum-img-wrapper medium-purple">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">Medium purple</h5>
+
+          <div class="bttn-container">
+            <div class="copy-text copy-text5">
+              <input type="text" class="text" value="#7645d9"/>
+                <button (click)="callCopyButton5()">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="16" 
+                    height="16" 
+                    fill="currentColor" 
+                    class="bi bi-clipboard" 
+                    viewBox="0 0 16 16">
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                  </svg>
+                </button>              
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="picsum-img-wrapper purple">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">Purple</h5>
+          
+          <div class="bttn-container">
+            <div class="copy-text copy-text6">
+              <input type="text" class="text" value="#5121b1"/>
+                <button (click)="callCopyButton6()">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="16" 
+                    height="16" 
+                    fill="currentColor" 
+                    class="bi bi-clipboard" 
+                    viewBox="0 0 16 16">
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                  </svg>
+                </button>              
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div class="col-container">
+      <div class="card">
+        <div class="picsum-img-wrapper dark-purple">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">Dark purple</h5>
+          
+          <div class="bttn-container">
+            <div class="copy-text copy-text7">
+              <input type="text" class="text" value="#280d5f"/>
+                <button (click)="callCopyButton7()">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="16" 
+                    height="16" 
+                    fill="currentColor" 
+                    class="bi bi-clipboard" 
+                    viewBox="0 0 16 16">
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                  </svg>
+                </button>              
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="picsum-img-wrapper blue">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">Blue</h5>
+          
+          <div class="bttn-container">
+            <div class="copy-text copy-text8">
+              <input type="text" class="text" value="#1d5d90"/>
+                <button (click)="callCopyButton8()">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="16" 
+                    height="16" 
+                    fill="currentColor" 
+                    class="bi bi-clipboard" 
+                    viewBox="0 0 16 16">
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                  </svg>
+                </button>              
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="picsum-img-wrapper medium-blue">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">Medium blue</h5>
+          
+          <div class="bttn-container">
+            <div class="copy-text copy-text9">
+              <input type="text" class="text" value="#216ba5"/>
+                <button (click)="callCopyButton9()">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="16" 
+                    height="16" 
+                    fill="currentColor" 
+                    class="bi bi-clipboard" 
+                    viewBox="0 0 16 16">
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                  </svg>
+                </button>              
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div class="col-container">
+      <div class="card">
+        <div class="picsum-img-wrapper light-blue">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">Light blue</h5>
+          
+          <div class="bttn-container">
+            <div class="copy-text copy-text10">
+              <input type="text" class="text" value="#1fc7d4"/>
+                <button (click)="callCopyButton10()">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="16" 
+                    height="16" 
+                    fill="currentColor" 
+                    class="bi bi-clipboard" 
+                    viewBox="0 0 16 16">
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                  </svg>
+                </button>              
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="picsum-img-wrapper yellow">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">Yellow</h5>
+         
+          <div class="bttn-container">
+            <div class="copy-text copy-text11">
+              <input type="text" class="text" value="#ffb237"/>
+                <button (click)="callCopyButton11()">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="16" 
+                    height="16" 
+                    fill="currentColor" 
+                    class="bi bi-clipboard" 
+                    viewBox="0 0 16 16">
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                  </svg>
+                </button>              
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="picsum-img-wrapper light-white1">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">Light white 1</h5>
+          
+          <div class="bttn-container">
+            <div class="copy-text copy-text12">
+              <input type="text" class="text" value="#f4eeff"/>
+                <button (click)="callCopyButton12()">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="16" 
+                    height="16" 
+                    fill="currentColor" 
+                    class="bi bi-clipboard" 
+                    viewBox="0 0 16 16">
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                  </svg>
+                </button>              
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div class="col-container">
+      <div class="card">
+        <div class="picsum-img-wrapper light-white2">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">Light white 2</h5>
+         
+          <div class="bttn-container">
+            <div class="copy-text copy-text13">
+              <input type="text" class="text" value="#faf9fa"/>
+                <button (click)="callCopyButton13()">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="16" 
+                    height="16" 
+                    fill="currentColor" 
+                    class="bi bi-clipboard" 
+                    viewBox="0 0 16 16">
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                  </svg>
+                </button>              
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="picsum-img-wrapper light-white3">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">Light white 3</h5>
+         
+          <div class="bttn-container">
+            <div class="copy-text copy-text14">
+              <input type="text" class="text" value="#f0f0f0" />
+                <button (click)="callCopyButton14()">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="16" 
+                    height="16" 
+                    fill="currentColor" 
+                    class="bi bi-clipboard" 
+                    viewBox="0 0 16 16">
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                  </svg>
+                </button>              
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="picsum-img-wrapper light-white4">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">Light white 4</h5>
+        
+          <div class="bttn-container">
+            <div class="copy-text copy-text15">
+              <input type="text" class="text" value="#e9eaeb"/>
+                <button (click)="callCopyButton15()">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="16" 
+                    height="16" 
+                    fill="currentColor" 
+                    class="bi bi-clipboard" 
+                    viewBox="0 0 16 16">
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                  </svg>
+                </button>              
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div class="col-container">
+      <div class="card">
+        <div class="picsum-img-wrappere light-white5">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">Light white 5</h5>
+         
+          <div class="bttn-container">
+            <div class="copy-text copy-text16">
+              <input type="text" class="text" value="#e7e3eb"/>
+                <button (click)="callCopyButton16()">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="16" 
+                    height="16" 
+                    fill="currentColor" 
+                    class="bi bi-clipboard" 
+                    viewBox="0 0 16 16">
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                  </svg>
+                </button>              
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="picsum-img-wrapper light-grey1">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">Light grey 1</h5>
+        
+          <div class="bttn-container">
+            <div class="copy-text copy-text17">
+              <input type="text" class="text" value="#ccc"/>
+                <button (click)="callCopyButton17()">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="16" 
+                    height="16" 
+                    fill="currentColor" 
+                    class="bi bi-clipboard" 
+                    viewBox="0 0 16 16">
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                  </svg>
+                </button>              
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="picsum-img-wrapper light-grey2">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">Light grey 2</h5>
+         
+          <div class="bttn-container">
+            <div class="copy-text copy-text18">
+              <input type="text" class="text" value="#bdc2c4"/>
+                <button (click)="callCopyButton18()">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="16" 
+                    height="16" 
+                    fill="currentColor" 
+                    class="bi bi-clipboard" 
+                    viewBox="0 0 16 16">
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                  </svg>
+                </button>              
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template ngbSlide>
+    <div class="col-container2">
+      <div class="card">
+        <div class="picsum-img-wrapper medium-grey">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">Medium grey</h5>
+         
+          <div class="bttn-container">
+            <div class="copy-text copy-text19">
+              <input type="text" class="text" value="#b3b3b3"/>
+                <button (click)="callCopyButton19()">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="16" 
+                    height="16" 
+                    fill="currentColor" 
+                    class="bi bi-clipboard" 
+                    viewBox="0 0 16 16">
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                  </svg>
+                </button>              
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="picsum-img-wrapper grey">
+      </div>
+        <div class="card-body">
+          <h5 class="card-title">Grey</h5>
+        
+          <div class="bttn-container">
+            <div class="copy-text copy-text20">
+              <input type="text" class="text" value="#aeaeae" />
+                <button (click)="callCopyButton20()">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="16" 
+                    height="16" 
+                    fill="currentColor" 
+                    class="bi bi-clipboard" 
+                    viewBox="0 0 16 16">
+                    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                  </svg>
+                </button>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</ngb-carousel>

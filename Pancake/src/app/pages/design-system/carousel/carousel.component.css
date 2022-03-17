@@ -1,11 +1,237 @@
-.wrap1 {
-    background-color: aqua;
-    width: 1500px;
-    height: 500px;
+/* COLORS */
+
+.col-container {
+    display: flex;
+    justify-content: space-between;
 }
 
-.wrap2 {
-    background-color: red;
-    width: 1500px;
-    height: 500px;
+.col-container2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.card,
+.card-body {
+    width: 440px;
+    border-radius: 5%;
+}
+
+.pink {
+    border-radius: 5%;
+    background-color: #ed4b9e;
+    width: 439px;
+    height: 300px;
+}
+
+.light-pink {
+    border-radius: 5%;
+    background-color: #d7caec;
+    width: 439px;
+    height: 300px;
+}
+
+.light-purple-max {
+    border-radius: 5%;
+    background-color: #b8add2;
+    width: 439px;
+    height: 300px;
+}
+
+.light-purple {
+    border-radius: 5%;
+    background-color: #7a6eaa;
+    width: 439px;
+    height: 300px;
+}
+
+.medium-purple {
+    border-radius: 5%;
+    background-color: #7645d9;
+    width: 439px;
+    height: 300px;
+}
+
+.purple {
+    border-radius: 5%;
+    background-color: #5121b1;
+    width: 439px;
+    height: 300px;
+}
+
+.dark-purple {
+    border-radius: 5%;
+    background-color: #280d5f;
+    width: 439px;
+    height: 300px;
+}
+
+.blue {
+    border-radius: 5%;
+    background-color: #1d5d90;
+    width: 439px;
+    height: 300px;
+}
+
+.medium-blue {
+    border-radius: 5%;
+    background-color: #216ba5;
+    width: 439px;
+    height: 300px;
+}
+
+.light-blue {
+    border-radius: 5%;
+    background-color: #1fc7d4;
+    width: 439px;
+    height: 300px;
+}
+
+.yellow {
+    border-radius: 5%;
+    background-color: #ffb237;
+    width: 439px;
+    height: 300px;
+}
+
+.light-white1 {
+    border-radius: 5%;
+    background-color: #f4eeff;
+    width: 439px;
+    height: 300px;
+}
+
+.light-white2 {
+    border-radius: 5%;
+    background-color: #faf9fa;
+    width: 439px;
+    height: 300px;
+}
+
+.light-white3 {
+    border-radius: 5%;
+    background-color: #f0f0f0;
+    width: 439px;
+    height: 300px;
+}
+
+.light-white4 {
+    border-radius: 5%;
+    background-color: #e9eaeb;
+    width: 439px;
+    height: 300px;
+}
+
+.light-white5 {
+    border-radius: 5%;
+    background-color: #e7e3eb;
+    width: 439px;
+    height: 300px;
+}
+
+.light-grey1 {
+    border-radius: 5%;
+    background-color: #ccc;
+    width: 439px;
+    height: 300px;
+}
+
+.light-grey2 {
+    border-radius: 5%;
+    background-color: #bdc2c4;
+    width: 439px;
+    height: 300px;
+}
+
+.medium-grey {
+    border-radius: 5%;
+    background-color: #b3b3b3;
+    width: 439px;
+    height: 300px;
+}
+
+.grey {
+    border-radius: 5%;
+    background-color: #aeaeae;
+    width: 439px;
+    height: 300px;
+}
+
+/*SHADOWS*/
+/* --shadow1: #1913261a;
+--shadow2: #1913260d;
+--shadow3: #27262c66;
+--shadow4: #0e0e2c66; */
+
+/* COPY BTTN */
+.bttn-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.label {
+	padding: 10px;
+	font-size: 18px;
+	color: #111;
+}
+
+.copy-text {
+	position: relative;
+	padding: 2px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	display: flex;
+}
+.copy-text input.text {
+	font-size: 18px;
+	color: #555;
+	border: none;
+	outline: none;
+}
+
+.copy-text input {
+    width: 300px;
+}
+
+.copy-text button {
+	padding: 10px;
+	background: #5784f5;
+	color: #fff;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	cursor: pointer;
+    width: 45px;
+}
+
+.copy-text button:active {
+	background: #809ce2;
+}
+.copy-text button:before {
+	content: "Copied";
+	position: absolute;
+	top: -45px;
+	right: 0px;
+	background: #5c81dc;
+	padding: 8px 10px;
+	border-radius: 20px;
+	font-size: 15px;
+	display: none;
+}
+.copy-text button:after {
+	content: "";
+	position: absolute;
+	top: -20px;
+	right: 25px;
+	width: 10px;
+	height: 10px;
+	background: #5c81dc;
+	transform: rotate(45deg);
+	display: none;
+}
+.copy-text.active button:before,
+.copy-text.active button:after {
+	display: block;
 }
