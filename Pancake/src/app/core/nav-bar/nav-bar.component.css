@@ -1,0 +1,380 @@
+:root {
+    --primary-pink: rgb(237, 75, 158);
+    --primary-light-pink: rgb(215, 202, 236);
+    --primary-light-purple-max: rgb(184, 173, 210);
+    --primary-light-purple: rgb(122, 110, 170);
+    --primary-medium-purple: rgb(118, 69, 217);
+    --primary-purple: rgb(81, 33, 177);
+    --primary-dark-purple: rgb(40, 13, 95);
+    --primary-blue: rgb(29, 93, 144);
+    --primary-medium-blue: rgb(33, 107, 165);
+    --primary-light-blue: rgb(31, 199, 212);
+    --primary-yellow: rgb(255, 178, 55);
+    --primary-light-white1: rgb(244, 238, 255);
+    --primary-light-white2: rgb(250, 249, 250);
+    --primary-light-white3: rgb(240, 240, 240);
+    --primary-light-white4: rgb(233, 234, 235);
+    --primary-light-white5: rgb(231, 227, 235);
+    --primary-light-grey1: rgb(204, 204, 204);
+    --primary-light-grey2: rgb(189, 194, 196);
+    --primary-medium-grey: rgb(179, 179, 179);
+    --primary-grey: rgb(174, 174, 174);
+    /*SHADOWS*/
+    --shadow1: rgba(25, 19, 38, 0.102);
+    --shadow2: rgba(25, 19, 38, 0.051);
+    --shadow3: rgba(39, 38, 44, 0.4);
+    --shadow4: rgba(14, 14, 44, 0.4);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .header {
+    margin-bottom: 3.5rem;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  nav {
+    left: 0px;
+    border-bottom: 1px solid rgb(215, 202, 236);
+    height: 3.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 1rem;
+    width: 100%;
+    background-color: white;
+    transition: top 0.2s ease 0s;
+  }
+  
+  .menu-bar {
+    top: 0px;
+    z-index: 20;  
+  }
+  
+  .header-left-topbar {
+    display: flex;
+    height: 100%
+  }
+  
+  .topbar-logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .topbar-logo:hover .left-eye,
+  .topbar-logo:hover .right-eye {
+  transform-origin: center 60%;
+  animation-name: eyes;
+  animation-duration: 350ms;
+  animation-iteration-count: 1;
+  }
+  
+  @keyframes eyes {
+    0%,
+    100% {
+      transform: scaleY(1);
+    }
+  
+    50% {
+      transform: scaleY(0.1);
+    }
+  }
+  
+  .desktop-logo {
+    width: 160px;
+  }
+  
+  
+  .nav-left {
+    display: flex;
+    position: relative;
+    margin-left: 1.5rem;
+    z-index: 100;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .drop-btn {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .drop-btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Kanit", sans-serif;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    color: rgb(118, 69, 217);
+    font-size: 1rem;
+    padding: 0px 1rem;
+    line-height: 1;
+  }
+  
+  .drop-btn a:hover,
+  .drop-btn a:active {
+    background: rgb(239, 244, 245);
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+  
+  .bi-circle-fill {
+    color: rgb(255, 178, 55);
+  }
+  
+  .dots::after {
+    content: "";
+    border-radius: 100%;
+    background: rgb(255, 178, 55);
+    height: 8px;
+    width: 8px;
+    margin-left: 12px;
+  }
+  
+  .fIBjTm {
+    fill: rgb(40, 13, 95);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid rgb(231, 227, 235);
+    border-radius: 1rem;
+    padding: 0.25rem 0px;
+    width: 17.5rem;
+    z-index: 10;
+    overflow: hidden;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    color: rgb(122, 110, 170);
+    white-space: nowrap;
+    padding: 0px 1rem;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgb(239, 244, 245);
+  }
+  
+  .dropdown-content a:active {
+    color: rgb(118, 69, 217);
+    opacity: 0.85;
+    transform: translateY(1px);
+  }
+  
+  .dropdown-content a:link {
+    color: rgb(122, 110, 170);
+  }
+  
+  .dropdown-content a:visited {
+    color: rgb(122, 110, 170);
+  }
+  
+  .dropdown-content hr {
+    border-color: rgb(231, 227, 235);
+    border-style: solid;
+    border-width: 1px 0px 0px;
+    margin: 0.25rem 0px;
+  }
+  
+  .yellow-warning {
+    border-radius: 16px;
+    padding: 0px 8px;
+    border: 2px solid rgb(255, 178, 55);
+    box-shadow: none;
+    color: rgb(255, 178, 55);
+    margin-left: 8px
+  }
+  
+  .header-right-topbar {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .pancake-logo {
+    margin-right: 0.75rem;
+    cursor: pointer;
+  }
+  
+  .pancake-logo a {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: rgb(118, 69, 217);
+  }
+  
+  .pancake-logo svg {
+    margin-right: 0.5rem;
+    transition: transform 0.3s ease 0s;
+  }
+  
+  .pancake-logo:hover svg {
+    transform: scale(1.2);
+  }
+  
+  .iaPfuZ {
+    fill: rgb(184, 173, 210); 
+  }
+  
+  .icon-button {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .icon-button:hover {
+    opacity: 0.65;
+  }
+  
+  .language {
+    position: relative;
+    height: 100%;
+    padding: 0px 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .language-selector {
+    display: none;
+    position: absolute;
+    width: max-content;
+    max-height: 400px;
+    padding: 1rem;
+    z-index: 99;
+    border-radius: 4px;
+    box-shadow: rgb(25 19 38 / 10%) 0px 2px 12px -8px, rgb(25 19 38 / 5%) 0px 1px 1px;
+    background-color: white;
+    overflow-y: auto;
+    transform: translate(-50%, 0px);
+    left: 50%;
+  }
+  
+  .language:hover 
+  .language-selector {
+    display: block;
+  }
+  
+  .lang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(40, 13, 95);
+    padding: 0px 0.5rem;
+    border-radius: 8px;
+    width: 100%;
+    min-height: 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .lang:hover {
+    opacity: 0.65;
+  }
+  
+  .language-selector button {
+    border: none;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgb(122, 110, 170);
+    border-radius: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: rgb(238 234 244) 0px 0px 5px inset;
+    border-radius: 10px;
+  }
+  
+  .cSawQi {
+    fill: rgb(122, 110, 170);
+  }
+  
+  .wheel-setting {
+    margin-right: 0.75rem;
+    margin-left: 0.25rem;
+  }
+  
+  .btn1-wallet {
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    border: 0px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: rgb(31, 199, 212);
+    color: white;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    height: 32px;
+    padding: 0px 1rem;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    white-space: nowrap;
+  }
+  
+  .btn1-wallet:hover {
+    background-color: rgb(31, 199, 212, 0.65);
+  }
+  
+  .btn1-wallet:active {
+    background-color:  rgb(31, 199, 212, 0.85);
+    transform: translateY(1px);
+    box-shadow: none;
+  }
+  
+  @media screen and (max-width: 967px) {
+    .desktop-logo {
+      display: none;
+    }
+  }
+  
+  @media all and (max-width: 768px) {
+    .btn1-wallet {
+    white-space: pre-wrap;
+    }
+  
+    .nav-left {
+      display: none;
+    }
+  
+    .pancake-logo{
+      display: none;
+    }
+  }
