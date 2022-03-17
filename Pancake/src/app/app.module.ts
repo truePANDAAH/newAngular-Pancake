@@ -14,6 +14,7 @@ import { TableBaseComponent } from './shared/table-base/table-base.component';
 import { TableBaseRowComponent } from './shared/table-base-row/table-base-row.component';
 import { TableBaseTitleComponent } from './shared/table-base-title/table-base-title.component';
 import { CarouselComponent } from './pages/design-system/carousel/carousel.component';
+import { IconsComponent } from './pages/design-system/icons/icons.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { CarouselComponent } from './pages/design-system/carousel/carousel.compo
     TableBaseComponent,
     TableBaseRowComponent,
     TableBaseTitleComponent,
-    CarouselComponent
+    CarouselComponent,
+    IconsComponent
   ],
   imports: [
     BrowserModule,
