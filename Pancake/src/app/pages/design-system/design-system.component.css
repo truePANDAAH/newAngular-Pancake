@@ -51,7 +51,7 @@
   border-radius: 1rem;
   box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
   background-color: var(--background-color);
-  color: var(--light-purple);
+  color: rgb(156, 2, 156);
   font-size: 1rem;
   height: 2.5rem; /*40px*/
   padding: 0rem 1rem;
@@ -69,7 +69,7 @@
 .radio-label {
   cursor: pointer;
   margin-right: 1rem;
-  color: var(--dark-purple);
+  color: rgb(49, 0, 49);
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -93,7 +93,7 @@
 }
 
 .radio-input:checked {
-  background-color: var(--green);
+  background-color: green;
 }
 
 .radio-input:checked::after {
@@ -114,7 +114,7 @@
   border-radius: 1rem;
   box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
   background-color: var(--background-color);
-  color: var(--dark-purple);
+  color: rgb(49, 0, 49);
   font-size: 1rem;
   height: 100%;
   width: 3.75rem; 
@@ -137,7 +137,7 @@
   border-radius: 1rem;
   box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
   background-color: var(--background-color);
-  color: var(--dark-purple);
+  color: rgb(49, 0, 49);
   font-size: 1rem;
   height: 100%;
   width: 100%;
@@ -178,7 +178,7 @@
   background-color: cyan;
   color: white;
   box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
-  cursor: var(--pointer);
+  cursor: pointer;
   letter-spacing: 0.03em;
   line-height: 1;
   width: 10.313rem; /*165px*/
@@ -202,7 +202,7 @@
   border: 0px;
   font-size: 1rem;
   font-weight: 600;
-  background-color: var(--cyan);
+  background-color: cyan;
   color: white;
   box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
   cursor: pointer;
@@ -232,13 +232,13 @@
   border-radius: 1rem;
   font-size: 1rem;
   opacity: 1;
-  color: var(--cyan);
+  color: cyan;
   background-color: rgb(255, 255, 255);
   letter-spacing: 0.03em;
   line-height: 1;
   width: 8.25rem; 
   height: 3rem; 
-  border: 2px solid var(--cyan);
+  border: 2px solid cyan;
   box-shadow: none;
   letter-spacing: 0.03em;
   cursor: pointer;
@@ -262,7 +262,7 @@
   border: 0px;
   font-size: 1rem;
   font-weight: 600;
-  background-color: var(--cyan);
+  background-color: cyan;
   color: white;
   box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
   cursor: pointer;
@@ -289,7 +289,7 @@
   border: 0px;
   font-size: 1rem;
   font-weight: 600;
-  background-color: var(--cyan);
+  background-color: cyan;
   color: white;
   box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
   cursor: pointer;
@@ -314,17 +314,17 @@
 .button-gear {
   border: none;
   background-color: transparent;
-  fill: var(--light-purple);
+  fill: rgb(156, 2, 156);
   cursor: pointer;
 }
 
 .button-gear:hover {
-  fill: var(--light-purple);
+  fill: rgb(156, 2, 156);
   opacity: 0.65;
 }
 
 .button-gear:active {
-  fill: var(--light-purple);
+  fill: rgb(156, 2, 156);
   opacity: 0.85;
   transform: translateY(1px);
   box-shadow: none;
@@ -334,17 +334,17 @@
 .button-language {
   border: none;
   background-color: transparent;
-  fill: var(--light-purple);
+  fill: rgb(156, 2, 156);
   cursor: pointer;
 }
 
 .button-language:hover {
-  fill: var(--light-purple);
+  fill: rgb(156, 2, 156);
   opacity: 0.65;
 }
 
 .button-language:active {
-  fill: var(--light-purple);
+  fill: rgb(156, 2, 156);
   opacity: 0.85;
   transform: translateY(1px);
   box-shadow: none;
