@@ -17,11 +17,8 @@ import { TableBaseTitleComponent } from './shared/table-base-title/table-base-ti
 import { CarouselComponent } from './pages/design-system/carousel/carousel.component';
 import { IconsComponent } from './pages/design-system/icons/icons.component';
 import { CopyButtonComponent } from './pages/design-system/copy-button/copy-button.component';
-<<<<<<< HEAD
 import { LogosAccordionComponent } from './pages/design-system/logos-accordion/logos-accordion.component';
-=======
 import { CollapseForButtonsComponent } from './pages/design-system/collapse-for-buttons/collapse-for-buttons.component';
->>>>>>> 016518d0af29bb74b02cf61f69df0044dc6ea7b5
 
 @NgModule({
   declarations: [
@@ -39,11 +36,8 @@ import { CollapseForButtonsComponent } from './pages/design-system/collapse-for-
     CarouselComponent,
     IconsComponent,
     CopyButtonComponent,
-<<<<<<< HEAD
-    LogosAccordionComponent
-=======
+    LogosAccordionComponent,
     CollapseForButtonsComponent,
->>>>>>> 016518d0af29bb74b02cf61f69df0044dc6ea7b5
   ],
   imports: [
     BrowserModule,

@@ -39,3 +39,14 @@
   width: fit-content;
   padding: 0.5rem; /*8px*/
 }
+
+.log-cont,
+.social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.colored {
+  display: flex;
+  justify-content: space-around;
+}
