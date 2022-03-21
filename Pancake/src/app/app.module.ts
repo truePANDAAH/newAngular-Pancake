@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { DesignSystemComponent } from './pages/design-system/design-system.component';
 import { NavBarComponent } from './core/nav-bar/nav-bar.component';
 import { FaqComponent } from './shared/faq/faq.component';
@@ -16,6 +17,7 @@ import { TableBaseTitleComponent } from './shared/table-base-title/table-base-ti
 import { CarouselComponent } from './pages/design-system/carousel/carousel.component';
 import { IconsComponent } from './pages/design-system/icons/icons.component';
 import { CopyButtonComponent } from './pages/design-system/copy-button/copy-button.component';
+import { LogosAccordionComponent } from './pages/design-system/logos-accordion/logos-accordion.component';
 
 @NgModule({
   declarations: [
@@ -32,11 +34,12 @@ import { CopyButtonComponent } from './pages/design-system/copy-button/copy-butt
     TableBaseTitleComponent,
     CarouselComponent,
     IconsComponent,
-    CopyButtonComponent
+    CopyButtonComponent,
+    LogosAccordionComponent
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -157,6 +157,11 @@
     height: 300px;
 }
 
+.carousel-control-next,
+.carousel-control-prev {
+    margin-bottom: 80px;
+}
+
 /*SHADOWS*/
 /* --shadow1: #1913261a;
 --shadow2: #1913260d;

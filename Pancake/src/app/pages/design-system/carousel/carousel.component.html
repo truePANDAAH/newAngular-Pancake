@@ -1,5 +1,5 @@
 <ngb-carousel>
-  <ng-template ngbSlide>
+  <ng-template ngbSlide class="carousel-control-next">
     <div class="col-container">
       <div class="card">
         <div class="picsum-img-wrapper pink">
@@ -9,8 +9,8 @@
 
           <div class="bttn-container">
             <div class="copy-text">
-              <input type="text" class="text" value="#ed4b9e"/>
-                <button (click)="callCopyButton()">
+              <input type="text" class="text" value="#ed4b9e" #userinput/>
+                <button (click)="copyInputMessage(userinput)" value="click to copy">
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="16" 
@@ -36,8 +36,8 @@
 
           <div class="bttn-container">
             <div class="copy-text copy-text2">
-              <input type="text text2" class="text" value="#d7caec"/>
-                <button (click)="callCopyButton2()">
+              <input type="text text2" class="text" value="#d7caec" #userinput2/>
+                <button (click)="copyInputMessage(userinput2)" value="click to copy">
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="16" 
@@ -63,8 +63,8 @@
 
           <div class="bttn-container">
             <div class="copy-text copy-text3">
-              <input type="text" class="text" value="#b8add2"/>
-                <button (click)="callCopyButton3()">
+              <input type="text" class="text" value="#b8add2" #userinput3/>
+                <button (click)="copyInputMessage(userinput3)" value="click to copy">
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="16" 
@@ -94,8 +94,8 @@
 
           <div class="bttn-container">
             <div class="copy-text copy-text4">
-              <input type="text" class="text" value="#7a6eaa"/>
-                <button (click)="callCopyButton4()">
+              <input type="text" class="text" value="#7a6eaa" #userinput/>
+                <button (click)="copyInputMessage(userinput)" value="click to copy">
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="16" 
@@ -121,8 +121,8 @@
 
           <div class="bttn-container">
             <div class="copy-text copy-text5">
-              <input type="text" class="text" value="#7645d9"/>
-                <button (click)="callCopyButton5()">
+              <input type="text" class="text" value="#7645d9" #userinput2/>
+                <button (click)="copyInputMessage(userinput2)" value="click to copy">
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="16" 
@@ -148,8 +148,8 @@
           
           <div class="bttn-container">
             <div class="copy-text copy-text6">
-              <input type="text" class="text" value="#5121b1"/>
-                <button (click)="callCopyButton6()">
+              <input type="text" class="text" value="#5121b1" #userinput3/>
+                <button (click)="copyInputMessage(userinput3)" value="click to copy">
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="16" 
@@ -179,8 +179,8 @@
           
           <div class="bttn-container">
             <div class="copy-text copy-text7">
-              <input type="text" class="text" value="#280d5f"/>
-                <button (click)="callCopyButton7()">
+              <input type="text" class="text" value="#280d5f" #userinput/>
+                <button (click)="copyInputMessage(userinput)" value="click to copy">
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="16" 
@@ -206,8 +206,8 @@
           
           <div class="bttn-container">
             <div class="copy-text copy-text8">
-              <input type="text" class="text" value="#1d5d90"/>
-                <button (click)="callCopyButton8()">
+              <input type="text" class="text" value="#1d5d90" #userinput2/>
+                <button (click)="copyInputMessage(userinput2)" value="click to copy">
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="16" 
@@ -233,8 +233,8 @@
           
           <div class="bttn-container">
             <div class="copy-text copy-text9">
-              <input type="text" class="text" value="#216ba5"/>
-                <button (click)="callCopyButton9()">
+              <input type="text" class="text" value="#216ba5" #userinput3/>
+                <button (click)="copyInputMessage(userinput3)" value="click to copy">
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="16" 
@@ -264,8 +264,8 @@
           
           <div class="bttn-container">
             <div class="copy-text copy-text10">
-              <input type="text" class="text" value="#1fc7d4"/>
-                <button (click)="callCopyButton10()">
+              <input type="text" class="text" value="#1fc7d4" #userinput/>
+                <button (click)="copyInputMessage(userinput)" value="click to copy">
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="16" 
@@ -291,8 +291,8 @@
          
           <div class="bttn-container">
             <div class="copy-text copy-text11">
-              <input type="text" class="text" value="#ffb237"/>
-                <button (click)="callCopyButton11()">
+              <input type="text" class="text" value="#ffb237" #userinput2/>
+                <button (click)="copyInputMessage(userinput2)" value="click to copy">
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="16" 
@@ -318,8 +318,8 @@
           
           <div class="bttn-container">
             <div class="copy-text copy-text12">
-              <input type="text" class="text" value="#f4eeff"/>
-                <button (click)="callCopyButton12()">
+              <input type="text" class="text" value="#f4eeff" #userinput3/>
+                <button (click)="copyInputMessage(userinput3)" value="click to copy">
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="16" 
@@ -349,8 +349,8 @@
          
           <div class="bttn-container">
             <div class="copy-text copy-text13">
-              <input type="text" class="text" value="#faf9fa"/>
-                <button (click)="callCopyButton13()">
+              <input type="text" class="text" value="#faf9fa" #userinput/>
+                <button (click)="copyInputMessage(userinput)" value="click to copy">
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="16" 
@@ -376,8 +376,8 @@
          
           <div class="bttn-container">
             <div class="copy-text copy-text14">
-              <input type="text" class="text" value="#f0f0f0" />
-                <button (click)="callCopyButton14()">
+              <input type="text" class="text" value="#f0f0f0" #userinput2/>
+                <button (click)="copyInputMessage(userinput2)" value="click to copy">
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="16" 
@@ -403,8 +403,8 @@
         
           <div class="bttn-container">
             <div class="copy-text copy-text15">
-              <input type="text" class="text" value="#e9eaeb"/>
-                <button (click)="callCopyButton15()">
+              <input type="text" class="text" value="#e9eaeb" #userinput3/>
+                <button (click)="copyInputMessage(userinput3)" value="click to copy">
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="16" 
@@ -434,8 +434,8 @@
          
           <div class="bttn-container">
             <div class="copy-text copy-text16">
-              <input type="text" class="text" value="#e7e3eb"/>
-                <button (click)="callCopyButton16()">
+              <input type="text" class="text" value="#e7e3eb" #userinput/>
+                <button (click)="copyInputMessage(userinput)" value="click to copy">
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="16" 
@@ -461,8 +461,8 @@
         
           <div class="bttn-container">
             <div class="copy-text copy-text17">
-              <input type="text" class="text" value="#ccc"/>
-                <button (click)="callCopyButton17()">
+              <input type="text" class="text" value="#ccc" #userinput2/>
+                <button (click)="copyInputMessage(userinput2)" value="click to copy">
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="16" 
@@ -488,8 +488,8 @@
          
           <div class="bttn-container">
             <div class="copy-text copy-text18">
-              <input type="text" class="text" value="#bdc2c4"/>
-                <button (click)="callCopyButton18()">
+              <input type="text" class="text" value="#bdc2c4" #userinput3/>
+                <button (click)="copyInputMessage(userinput3)" value="click to copy">
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="16" 
@@ -519,8 +519,8 @@
          
           <div class="bttn-container">
             <div class="copy-text copy-text19">
-              <input type="text" class="text" value="#b3b3b3"/>
-                <button (click)="callCopyButton19()">
+              <input type="text" class="text" value="#b3b3b3" #userinput/>
+                <button (click)="copyInputMessage(userinput)" value="click to copy">
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="16" 
@@ -546,8 +546,8 @@
         
           <div class="bttn-container">
             <div class="copy-text copy-text20">
-              <input type="text" class="text" value="#aeaeae" />
-                <button (click)="callCopyButton20()">
+              <input type="text" class="text" value="#aeaeae" #userinput2/>
+                <button (click)="copyInputMessage(userinput2)" value="click to copy">
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="16" 

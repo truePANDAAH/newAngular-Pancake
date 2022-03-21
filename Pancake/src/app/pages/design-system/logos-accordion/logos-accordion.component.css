@@ -1,0 +1,41 @@
+/* -- LOGOS -- */
+/* eyes  */
+.logo-container:hover .left-eye,
+.logo-container:hover .right-eye {
+  transform-origin: center 60%;
+  animation-name: eyes;
+  animation-duration: 350ms;
+  animation-iteration-count: 1;
+}
+
+#img1{
+  max-height: 600px;
+}
+@keyframes eyes {
+
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(0.1);
+  }
+}
+
+/* logo desktop */
+.desktop-logo {
+  width: 10rem; /*160px*/
+}
+
+/* logo mobile */
+.mobile-logo {
+  width: 2rem; /*32px*/
+}
+
+/* logo footer */
+.bcg-dark {
+  background-color: rgb(39, 38, 44);
+  width: fit-content;
+  padding: 0.5rem; /*8px*/
+}
