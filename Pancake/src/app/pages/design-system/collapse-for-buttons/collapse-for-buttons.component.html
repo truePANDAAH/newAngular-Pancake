@@ -1,0 +1,233 @@
+<!-- <div id="accordion">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Buttons Styles
+          </button>
+        </h5>
+      </div>
+  
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body">
+          
+
+           
+  </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Input filed
+          </button>
+        </h5>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+        <div class="card-body">
+         
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Typography
+          </button>
+        </h5>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+        <div class="card-body">
+            
+
+           
+  </div> -->
+
+
+  <!-- new collapse -->
+
+  <ngb-accordion [closeOthers]="true" activeIds="static-1">
+    <ngb-panel id="static-1" title="Buttons">
+      <ng-template ngbPanelContent>
+        <div class="card-body">
+          <!--Logo Desktop-->
+          <div class="mb-4 me-5">
+            <h3 class="h5 mb-3"></h3>
+                <!-- contenuto -->
+                 <!--Button Styles-->
+    <div class="container p-4">
+        <div class="card p-4 shadow border-1 border border-info rounded ">
+          <h2 class="h2 mb-5">Button Styles</h2>
+          <div class="row row-cols-auto gx-5 mb-5">
+      
+            <!--Standard Button-->
+            <!-- da fixare l'hover del puntatoregi -->
+            <div class="mb-4">
+              <h3 class="h5 mb-3">Standard button</h3>
+              <div>
+                <button class="button-standard">Connect Wallet</button>
+              </div>
+            </div>
+      
+            <!--Large Button-->
+            <div class="mb-4">
+              <h3 class="h5 mb-3">Large button</h3>
+              <div>
+                <button class="button-large">
+                  <div>Play</div>
+                  <img src="../../../assets/icons/arrow-right-white.svg" />
+                </button>
+              </div>
+            </div>
+      
+            <!--Medium Button-->
+            <div class="mb-4">
+              <h3 class="h5 mb-3">Medium button</h3>
+              <div>
+                <button class="button-medium">Trade Now</button>
+              </div>
+            </div>
+      
+            <!--Small Button-->
+            <div class="mb-4">
+              <h3 class="h5 mb-3">Small button</h3>
+              <div>
+                <button class="button-small">Explore</button>
+              </div>
+            </div>
+      
+            <!--Squashed Button-->
+            <div class="mb-4">
+              <h3 class="h5 mb-3">Squashed button</h3>
+              <div>
+                <button class="button-squashed">Buy CAKE</button>
+              </div>
+            </div>
+      
+          </div>
+          <!--Gear Button-->
+            <div class="due-bottoni">
+                <div class="mb-4">
+                    <h3 class="h5 mb-3">Gear button    </h3>
+                    <div>
+                        <button class="button-gear"><img src="../../../assets/icons/gear-lightpurple.svg"></button>
+                    </div>
+                </div>
+                
+                
+                <!--Language Button-->
+                <div class="mb-4">
+                    <h3 class="h5 mb-3">Language button</h3>
+                    <div>
+                        <button class="button-language"><img src="../../../assets/icons/language-light-purple.svg"></button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-auto gx-5 mb-5">
+
+                <!-- fine contenuto -->
+          </div>
+        </div>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel id="static-2" title="Inputs">
+      <ng-template ngbPanelContent>
+      <div class="card-body">
+          <div class="me-5 mb-4">
+            <h3 class="h5 mb-3"></h3>
+            <!-- inizio contenuto -->
+            <!-- inputs -->
+            <div class="container p-4">
+                <div class="card p-4 shadow border-1 border border-info rounded ">
+                  <h2 class="h2 mb-5">Inputs</h2>
+                  <div class="row row-cols-auto gx-5">
+              
+                    <!--Search Field-->
+                    <div class="me-4 mb-4">
+                      <h3 class="h5 mb-3">Search field</h3>
+                      <div>
+                        <input class="search-field" type="text" placeholder="Search pools or token" />
+                      </div>
+                    </div>
+              
+                    <!--Radio Input-->
+                    <!-- da fixare l'hover -->
+                    <div class="me-4 mb-4">
+                      <h3 class="h5 mb-3">Radio input</h3>
+                      <div>
+                        <input id="radio" class="radio-input" type="radio" name="radio" />
+                        <label for="radio" class="radio-label" value="#">Vote Now</label>
+                      </div>
+                    </div>
+              
+                    <!--General Input Field-->
+                    <div class="me-4 mb-4">
+                      <h3 class="h5 mb-3">General input field</h3>
+                      <div>
+                        <input class="general-field" type="text" pattern="^[0-9]+$" value="123" />
+                      </div>
+                    </div>
+              
+                    <!--General Input Field Big-->
+                    <div class="me-4 mb-4">
+                      <h3 class="h5 mb-3">General input field big</h3>
+                      <div>
+                        <div class="general-field-big-container">
+                          <input class="general-field-big" type="text" pattern="^[0-9]*[.,]?[0-9]*$" placeholder="0.0" minlength="1"
+                            maxlength="79" />
+                        </div>
+                      </div>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+              
+        
+            <!-- fine contenuto -->
+          </div>
+        </div>
+      </ng-template>
+    </ngb-panel>
+    <ngb-panel id="static-3" title="Typography">
+      <ng-template ngbPanelContent>
+        <div class="card-body">
+          <div class="me-5 mb-4">
+            <h3 class="h5 mb-3"></h3>
+            <!-- inizio contenuto -->
+             <!--Typography-->
+                <div class="container p-4">
+                    <div class="card p-4 shadow border-1 border border-info rounded ">
+                    <h2 class="h2 mb-5">Typograhy</h2>
+                    <div class="row row-cols-auto gx-5 mb-4">
+                
+                        <div class="mb-4 me-4 h1" style="line-height: 1;">
+                        H1<br>Kanit<br>64px
+                        </div>
+                
+                        <div class="mb-4 me-4 h2" style="line-height: 1;">
+                        H2<br>Kanit<br>40px
+                        </div>
+                
+                        <div class="mb-4 me-4 h3" style="line-height: 1;">
+                        H3<br>Kanit<br>20px
+                        </div>
+                
+                        <div class="mb-4 me-4 p" style="line-height: 1;">
+                        Texts<br>Kanit<br>16px
+                        </div>
+                
+                        <div class="mb-4 me-4 p-small" style="line-height: 1;">
+                        Small titles<br>Kanit<br>12px
+                        </div>
+                
+                    </div>
+                    </div>
+                </div>
+            <!-- fine contenuto -->
+          </div>
+        </div>
+      </ng-template>
+    </ngb-panel>
+  </ngb-accordion>

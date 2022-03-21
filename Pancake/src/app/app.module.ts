@@ -16,6 +16,7 @@ import { TableBaseTitleComponent } from './shared/table-base-title/table-base-ti
 import { CarouselComponent } from './pages/design-system/carousel/carousel.component';
 import { IconsComponent } from './pages/design-system/icons/icons.component';
 import { CopyButtonComponent } from './pages/design-system/copy-button/copy-button.component';
+import { CollapseForButtonsComponent } from './pages/design-system/collapse-for-buttons/collapse-for-buttons.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CopyButtonComponent } from './pages/design-system/copy-button/copy-butt
     TableBaseTitleComponent,
     CarouselComponent,
     IconsComponent,
-    CopyButtonComponent
+    CopyButtonComponent,
+    CollapseForButtonsComponent,
   ],
   imports: [
     BrowserModule,
