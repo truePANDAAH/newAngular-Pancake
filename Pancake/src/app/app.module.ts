@@ -19,6 +19,7 @@ import { IconsComponent } from './pages/design-system/icons/icons.component';
 import { CopyButtonComponent } from './pages/design-system/copy-button/copy-button.component';
 import { LogosAccordionComponent } from './pages/design-system/logos-accordion/logos-accordion.component';
 import { CollapseForButtonsComponent } from './pages/design-system/collapse-for-buttons/collapse-for-buttons.component';
+import { FooterComponent } from './core/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { CollapseForButtonsComponent } from './pages/design-system/collapse-for-
     CopyButtonComponent,
     LogosAccordionComponent,
     CollapseForButtonsComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

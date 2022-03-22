@@ -1,0 +1,231 @@
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+li>h2{
+    color: rgb(154, 106, 255);  
+}
+
+li>h3>a:hover{
+    text-decoration: underline;   
+}
+
+ul {list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+li{
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;  
+    cursor: pointer;
+    
+}
+
+li>h1,h2,h3{
+    padding: 8px;
+    color: white;  
+    font-size: 15px;
+}
+
+.main {
+    height: 30vh;
+    background-color: rgb(188, 181, 218);
+}
+.footer_black_main{
+    background-color: rgb(39, 38, 44);
+    width: 100vw;
+    height: 70vh;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.footer_black_second{
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+.informazioni,.guida,.sviluppatori,.pancakeswap{
+    width: 240px;
+    height: 350px;
+    margin: 20px;
+    padding: 30px;
+    
+    
+}
+
+.online_shop_{
+    color: rgb(255, 178, 55);
+    
+}
+
+
+
+
+ .flex-container-main{
+     height: 100vh;
+     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items:center;
+    
+ }
+      
+  
+
+
+
+ .flex-container-1{
+     width: 100vw;
+     height: 100vh;
+     background-color: #b8add2;
+     margin-bottom: 4px;
+     padding: 0;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+  
+}
+
+.rate-volatability{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height:480px;
+    margin: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+
+}
+
+
+.BNB-CAKE{
+    width: 100%;
+    border-radius: 10px;
+   /* border: 1px solid rgb(231, 227, 235);*/
+    height: 8vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.BNB-CAKE h2 {
+    color: rgb(40, 13, 95);
+}
+
+.ktUkWr {
+    align-self: center;
+    fill: rgb(31, 199, 212);
+    
+    
+}
+
+.display-none{
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    height: 48px;
+    /*padding: 0px 24px;*/
+    background-color: transparent;
+    color: rgb(31, 199, 212);
+    box-shadow: none;
+}
+
+.bottoni{
+    display: flex;
+    flex-direction: row;
+    margin: 4px;
+   
+  
+}
+.bottoni h2{
+    color: black;
+}
+
+.Basic, .trading-view{
+    background-color: rgba(31, 199, 212, 0.06);
+    padding: 4px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin:6px;
+}
+
+
+
+
+
+
+.conversion{
+    width: 340px;
+    height: 480px;
+    margin: 15px;
+    background-color:rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+
+}
+
+
+
+
+
+.flex-container-2{
+    width: 100vw;
+     height: 20vh;
+     background-color: #b8add2;
+     margin: 0px;
+     padding: 0;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     
+    
+}
+
+.button-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 500px;
+    height: 30px;
+    
+}
+
+.button-2 h2{
+    color: black;
+    
+}
+
+.button-2 button {
+    width: 100px;
+    border-radius: 16px;
+    cursor: pointer;
+}
