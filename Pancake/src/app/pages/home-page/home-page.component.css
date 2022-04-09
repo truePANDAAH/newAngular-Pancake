@@ -73,7 +73,7 @@ main {
 
 .text2-bunny {
   margin-bottom: 1.5rem;
-  color: var(--primary-purple);
+  color: rgb(81, 33, 177);
   line-height: 1.1;
 }
 
@@ -88,7 +88,7 @@ main {
   border: 0px;
   font-size: 16px;
   font-weight: 600;
-  background-color: var(--primary-light-blue);
+  background-color: rgb(31, 199, 212);
   color: white;
   box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
   cursor: pointer;

@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-pink: rgb(237, 75, 158);
+  --primary-light-pink: rgb(215, 202, 236);
+  --primary-light-purple-max: rgb(184, 173, 210);
+  --primary-light-purple: rgb(122, 110, 170);
+  --primary-medium-purple: rgb(118, 69, 217);
+  --primary-purple: rgb(81, 33, 177);
+  --primary-dark-purple: rgb(40, 13, 95);
+  --primary-blue: rgb(29, 93, 144);
+  --primary-medium-blue: rgb(33, 107, 165);
+  --primary-light-blue: rgb(31, 199, 212);
+  --primary-yellow: rgb(255, 178, 55);
+  --primary-light-white1: rgb(244, 238, 255);
+  --primary-light-white2: rgb(250, 249, 250);
+  --primary-light-white3: rgb(240, 240, 240);
+  --primary-light-white4: rgb(233, 234, 235);
+  --primary-light-white5: rgb(231, 227, 235);
+  --primary-light-grey1: rgb(204, 204, 204);
+  --primary-light-grey2: rgb(189, 194, 196);
+  --primary-medium-grey: rgb(179, 179, 179);
+  --primary-grey: rgb(174, 174, 174);
+  /*SHADOWS*/
+  --shadow1: rgba(25, 19, 38, 0.102);
+  --shadow2: rgba(25, 19, 38, 0.051);
+  --shadow3: rgba(39, 38, 44, 0.4);
+  --shadow4: rgba(14, 14, 44, 0.4);
+}
