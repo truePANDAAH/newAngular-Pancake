@@ -26,3 +26,17 @@
   --shadow3: rgba(39, 38, 44, 0.4);
   --shadow4: rgba(14, 14, 44, 0.4);
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(122, 110, 170);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: rgb(238 234 244) 0px 0px 5px inset;
+  border-radius: 10px;
+}
