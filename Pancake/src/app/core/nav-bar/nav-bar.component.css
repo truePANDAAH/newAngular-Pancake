@@ -49,6 +49,10 @@
     background-color: white;
     transition: top 0.2s ease 0s;
   }
+
+  .nav-position-hide {
+    top: -56px;  
+  }
   
   .menu-bar {
     top: 0px;
