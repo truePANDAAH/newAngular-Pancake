@@ -25,6 +25,10 @@
     --shadow3: rgba(39, 38, 44, 0.4);
     --shadow4: rgba(14, 14, 44, 0.4);
   }
+
+  .wheel {
+    margin-bottom: -9px;
+  }
   
   a {
     text-decoration: none;

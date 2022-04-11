@@ -37,7 +37,6 @@ li>h1,h2,h3{
 }
 .footer_black_main{
     background-color: rgb(39, 38, 44);
-    width: 100vw;
     height: 70vh;
     margin: 0px;
     padding: 0px;
@@ -47,7 +46,6 @@ li>h1,h2,h3{
 .footer_black_second{
     margin: 0px;
     padding: 0px;
-    width: 100vw;
     height: 70vh;
     display: flex;
     flex-direction: row;

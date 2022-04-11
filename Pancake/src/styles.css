@@ -40,3 +40,28 @@
   box-shadow: rgb(238 234 244) 0px 0px 5px inset;
   border-radius: 10px;
 }
+
+/* Carousel */
+.carousel-control-next, 
+.carousel-control-prev {
+    margin-bottom: 80px;
+}
+
+
+/* Modal-setting */
+.light-blue-backdrop {
+    background-color: #7645d9;
+}
+
+.modal-content {
+    width: 400px;
+    border-radius: 50px;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* .popover {
+    background-color: black;
+} */
+
