@@ -613,7 +613,7 @@ main {
 .divider2 {
   background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
   fill: var(--primary-light-white2);
-  width: 150%;
+  width: 100%;
   height: 100%;
 }
 
