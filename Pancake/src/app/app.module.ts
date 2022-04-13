@@ -21,6 +21,7 @@ import { LogosAccordionComponent } from './pages/design-system/logos-accordion/l
 import { CollapseForButtonsComponent } from './pages/design-system/collapse-for-buttons/collapse-for-buttons.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
+import { NftComponent } from './pages/nft/nft.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +42,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
     CollapseForButtonsComponent,
     FooterComponent,
     HomePageComponent,
+    NftComponent,
   ],
   imports: [
     BrowserModule,
