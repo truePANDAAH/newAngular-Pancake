@@ -54,8 +54,8 @@
 }
 
 .modal-content {
-    width: 400px;
-    border-radius: 50px;
+  width: auto;
+  border-radius: 50px;
 }
 
 html, body { height: 100%; }
@@ -64,4 +64,3 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 /* .popover {
     background-color: black;
 } */
-

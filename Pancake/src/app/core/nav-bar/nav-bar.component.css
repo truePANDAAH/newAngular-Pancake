@@ -341,17 +341,13 @@
   .btn1-wallet {
     display: flex;
     align-items: center;
-  }
-    /*border-radius: 1rem;
+  border-radius: 1rem;
     border: 0px;
-    font-size: 1rem;
-    font-weight: 600;
     background-color: rgb(31, 199, 212);
     color: white;
     box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
     cursor: pointer;
-    letter-spacing: 0.03em;
-    line-height: 1;
+    
     height: 32px;
     padding: 0px 1rem;
     transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
@@ -366,7 +362,7 @@
     background-color:  rgb(31, 199, 212, 0.85);
     transform: translateY(1px);
     box-shadow: none;
-  }*/
+  }
   
   @media screen and (max-width: 967px) {
     .desktop-logo {

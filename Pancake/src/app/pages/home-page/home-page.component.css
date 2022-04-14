@@ -66,7 +66,10 @@ main {
   justify-content: flex-start;
 }
 
-.btn2 {
+.btn2-wallet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 16px;
   border: 0px;
   font-family: 'Kanit', sans-serif;
@@ -84,11 +87,11 @@ main {
   margin-right: 0.5rem;
 }
 
-.btn2:hover {
+.btn2-wallet:hover {
   background-color: rgb(31, 199, 212, 0.65);
 }
 
-.btn2:active {
+.btn2-wallet:active {
   background-color: rgb(31, 199, 212, 0.85);
   transform: translateY(1px);
   box-shadow: none;

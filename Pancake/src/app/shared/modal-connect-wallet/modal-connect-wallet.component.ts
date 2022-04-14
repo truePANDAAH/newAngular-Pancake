@@ -4,13 +4,7 @@ import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 @Component({
   selector: 'app-modal-connect-wallet',
   templateUrl: './modal-connect-wallet.component.html',
-  styleUrls: ['./modal-connect-wallet.component.css'],
-  styles: [`
-  .let-modal {
-    width: 360px;
-    height: 460px;
-  }`
-  ]
+  styleUrls: ['./modal-connect-wallet.component.css']
 })
 
 export class ModalConnectWalletComponent implements OnInit {
@@ -21,7 +15,7 @@ export class ModalConnectWalletComponent implements OnInit {
   constructor(private modalService: NgbModal) { }
 
   open(content:any) {
-    this.modalService.open(content, { centered: true }).result.then((result) => {
+    this.modalService.open(content, { windowClass: 'connect-wallet', centered: true }).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
     }, (reason) => {
       this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
