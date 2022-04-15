@@ -355,19 +355,19 @@ main {
 
 .dubkGi{
   fill: rgb(122, 110, 170);
+  align-self: flex-end;
 }
 
 .ACFFk{
   fill: rgb(31, 199, 212);
+  align-self: flex-end;
 }
 
 .kyGFY {
   fill: rgb(237, 75, 158);
-}
-
-.cards-icon {
   align-self: flex-end;
 }
+
 
 .set-text {
   margin-top: 1.5rem;
@@ -1213,9 +1213,10 @@ main {
   }
 
 }
-.sc-bdnxRM{
+.kYHDzn{
   fill: white;
 }
+
 .eVBpMC{
   fill: black;
 }
