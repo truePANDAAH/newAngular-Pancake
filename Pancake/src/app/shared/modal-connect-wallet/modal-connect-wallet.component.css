@@ -25,7 +25,8 @@
   z-index: 900;
   width: 340px;
   height: 460px;
-  border-radius: 28px;
+  border-radius: 40px;
+}
 
 .modal-header {
   display: inline-flex;
