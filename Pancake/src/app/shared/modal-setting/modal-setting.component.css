@@ -417,3 +417,13 @@
 .eig-content2::before {
   top: 125px;
 }
+
+.dark-mode,
+.six-box,
+.sev-slider,
+.eig-slider,
+.nin-slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

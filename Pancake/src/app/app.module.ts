@@ -22,6 +22,12 @@ import { CollapseForButtonsComponent } from './pages/design-system/collapse-for-
 import { FooterComponent } from './core/footer/footer.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { NftComponent } from './pages/nft/nft.component';
+import { ToggleSwitchComponent } from './shared/toggle-switch/toggle-switch.component';
+import { TogglePancakeComponent } from './shared/toggle-pancake/toggle-pancake.component';
+import { DarkmodeBtnComponent } from './shared/darkmode-btn/darkmode-btn.component';
+import { HttpClientModule } from '@angular/common/http'
+import { PancakeRoutingModule } from './pancake-routing.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,10 +49,15 @@ import { NftComponent } from './pages/nft/nft.component';
     FooterComponent,
     HomePageComponent,
     NftComponent,
+    ToggleSwitchComponent,
+    TogglePancakeComponent,
+    DarkmodeBtnComponent,
   ],
   imports: [
     BrowserModule,
     NgbModule,
+    HttpClientModule,
+    PancakeRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

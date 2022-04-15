@@ -51,6 +51,7 @@
 
       <div class="dark-mode">
         <p>Dark mode</p>
+        <app-darkmode-btn></app-darkmode-btn>
       </div>
 
       <p class="trd-line">Default Transaction Speed (GWEI) 
@@ -96,6 +97,8 @@
           </div>
         </div>
       </div>
+
+      <div class="six-box">
       <p class="six-line">Tx deadline (mins)
         <span class="popover__wrapper">
           <svg viewBox="0 0 24 24" width="15px" xmlns="http://www.w3.org/2000/svg" fill="rgb(122, 110, 170)" class="qst-mark">
@@ -106,6 +109,12 @@
           </span>
         </span>
       </p>
+      <div>
+        <input class="general-field" type="text" pattern="^[0-9]+$" value="20"/>
+      </div>
+    </div>
+      
+      <div class="sev-slider">
       <p class="sev-line">Expert Mode
         <span class="popover__wrapper">
           <svg viewBox="0 0 24 24" width="15px" xmlns="http://www.w3.org/2000/svg" fill="rgb(122, 110, 170)" class="qst-mark">
@@ -116,6 +125,10 @@
           </span>
         </span>
       </p>
+      <app-toggle-switch></app-toggle-switch>
+    </div>
+
+    <div class="eig-slider">
       <p class="eig-line">Disable Multihops
         <span class="popover__wrapper">
           <svg viewBox="0 0 24 24" width="15px" xmlns="http://www.w3.org/2000/svg" fill="rgb(122, 110, 170)" class="qst-mark">
@@ -126,6 +139,10 @@
           </span>
         </span>
       </p>
+      <app-toggle-switch></app-toggle-switch>
+    </div>
+
+    <div class="eig-slider">
       <p class="eig-line">Subgraph Health Indicator
         <span class="popover__wrapper">
           <svg viewBox="0 0 24 24" width="15px" xmlns="http://www.w3.org/2000/svg" fill="rgb(122, 110, 170)" class="qst-mark">
@@ -136,6 +153,10 @@
           </span>
         </span>
       </p>
+      <app-toggle-switch></app-toggle-switch>
+    </div>
+    
+    <div class="nin-slider">
       <p class="nin-line">Flippy sounds
         <span class="popover__wrapper">
           <svg viewBox="0 0 24 24" width="15px" xmlns="http://www.w3.org/2000/svg" fill="rgb(122, 110, 170)" class="qst-mark">
@@ -146,6 +167,8 @@
           </span>
         </span>
       </p>
+      <app-toggle-pancake></app-toggle-pancake>
+    </div>
 
     </div>
   </ng-template>

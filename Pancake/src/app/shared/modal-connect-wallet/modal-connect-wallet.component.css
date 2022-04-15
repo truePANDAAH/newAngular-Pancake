@@ -27,7 +27,7 @@
   box-shadow: none;
 }
 
-::ng-deep .modal-content {
+/* ::ng-deep .modal-content {
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -38,9 +38,7 @@
   width: 340px;
   height: 460px;
   border-radius: 28px;
-}
-
-
+} */
 
 .modal-header {
   display: inline-flex;
@@ -49,8 +47,8 @@
   background: linear-gradient(139.73deg, rgb(229, 253, 255) 0%, rgb(243, 239, 255) 100%);
   border-bottom: 1px solid rgb(231, 227, 235);
   padding: 12px 24px;
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
+  border-top-right-radius: 47px; /*erano a 25*/
+  border-top-left-radius: 47px;
 }
 
 .modal-title {

@@ -1,3 +1,11 @@
+footer {
+    background-color: rgb(39, 38, 44);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 56px 10px 32px 10px;
+}
 
 a {
     text-decoration: none;
@@ -12,7 +20,8 @@ li>h3>a:hover{
     text-decoration: underline;   
 }
 
-ul {list-style: none;
+ul {
+    list-style: none;
     padding: 0px;
     margin: 0px;
 }
@@ -31,22 +40,7 @@ li>h1,h2,h3{
     font-size: 15px;
 }
 
-.main {
-    height: 30vh;
-    background-color: rgb(188, 181, 218);
-}
-.footer_black_main{
-    background-color: rgb(39, 38, 44);
-    height: 70vh;
-    margin: 0px;
-    padding: 0px;
-    
-}
-
 .footer_black_second{
-    margin: 0px;
-    padding: 0px;
-    height: 70vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -55,10 +49,7 @@ li>h1,h2,h3{
 
 .informazioni,.guida,.sviluppatori,.pancakeswap{
     width: 240px;
-    height: 350px;
-    margin: 20px;
-    padding: 30px;
-    
+    height: 350px;    
     
 }
 
@@ -67,161 +58,128 @@ li>h1,h2,h3{
     
 }
 
-
-
-
- .flex-container-main{
-     height: 100vh;
-     width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content:flex-end;
-    align-items:center;
-    
- }
-      
-  
-
-
-
- .flex-container-1{
-     width: 100vw;
-     height: 100vh;
-     background-color: #b8add2;
-     margin-bottom: 4px;
-     padding: 0;
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
-     align-items: center;
-  
-}
-
-.rate-volatability{
-    display: flex;
-    flex-direction: column;
-    width: 700px;
-    height:480px;
-    margin: 15px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-
-}
-
-
-.BNB-CAKE{
-    width: 100%;
-    border-radius: 10px;
-   /* border: 1px solid rgb(231, 227, 235);*/
-    height: 8vh;
-    background-color: rgba(255, 255, 255, 0.5);
+.social-icon {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: flex-start;
 }
 
-.BNB-CAKE h2 {
-    color: rgb(40, 13, 95);
+.social-icon svg {
+    margin-right: 20px;
 }
 
-.ktUkWr {
-    align-self: center;
-    fill: rgb(31, 199, 212);
-    
-    
+hr {
+    background-color: rgb(184, 173, 210);
 }
 
-.display-none{
-    -webkit-box-align: center;
+.buttons {
+    display: flex;
+}
+
+.icon-button {
+    color: rgb(184, 173, 210);
+    font-size: 20px;
+}
+
+.icon-button {
+    display: flex;
+    height: 100%;
     align-items: center;
-    border: 0px;
-    border-radius: 16px;
     cursor: pointer;
-    display: inline-flex;
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 600;
-    -webkit-box-pack: center;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .icon-button:hover {
+    opacity: 0.65;
+  }
+
+.language {
+    position: relative;
+    height: 100%;
+    padding: 0px 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .language-selector {
+    display: none;
+    position: absolute;
+    width: max-content;
+    max-height: 400px;
+    padding: 1rem;
+    z-index: 99;
+    border-radius: 4px;
+    box-shadow: rgb(25 19 38 / 10%) 0px 2px 12px -8px, rgb(25 19 38 / 5%) 0px 1px 1px;
+    background-color: white;
+    overflow-y: auto;
+    transform: translate(-50%, 0px);
+    left: 50%;
+  }
+  
+  .language:hover 
+  .language-selector {
+    display: block;
+  }
+  
+  .lang {
+    display: flex;
+    align-items: center;
     justify-content: center;
+    text-align: center;
+    color: rgb(40, 13, 95);
+    padding: 0px 0.5rem;
+    border-radius: 8px;
+    width: 100%;
+    min-height: 32px;
+    font-size: 1rem;
+    font-weight: 600;
     letter-spacing: 0.03em;
     line-height: 1;
-    opacity: 1;
-    outline: 0px;
-    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
-    height: 48px;
-    /*padding: 0px 24px;*/
+    cursor: pointer;
+    border: none;
     background-color: transparent;
-    color: rgb(31, 199, 212);
-    box-shadow: none;
-}
-
-.bottoni{
-    display: flex;
-    flex-direction: row;
-    margin: 4px;
-   
+  }
   
-}
-.bottoni h2{
-    color: black;
-}
+  .lang:hover {
+    opacity: 0.65;
+  }
+  
+  .language-selector button {
+    border: none;
+  }
 
-.Basic, .trading-view{
-    background-color: rgba(31, 199, 212, 0.06);
-    padding: 4px 8px;
-    border-radius: 6px;
-    cursor: pointer;
-    margin:6px;
-}
-
-
-
-
-
-
-.conversion{
-    width: 340px;
-    height: 480px;
-    margin: 15px;
-    background-color:rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-
-}
-
-
-
-
-
-.flex-container-2{
-    width: 100vw;
-     height: 20vh;
-     background-color: #b8add2;
-     margin: 0px;
-     padding: 0;
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     
-    
-}
-
-.button-2{
+  .header-right-topbar {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 500px;
-    height: 30px;
-    
-}
-
-.button-2 h2{
-    color: black;
-    
-}
-
-.button-2 button {
-    width: 100px;
-    border-radius: 16px;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .pancake-logo {
+    margin-right: 0.75rem;
     cursor: pointer;
-}
+  }
+  
+  .pancake-logo a {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: rgb(184, 173, 210);
+  }
+  
+  .pancake-logo svg {
+    margin-right: 0.5rem;
+    transition: transform 0.3s ease 0s;
+  }
+  
+  .pancake-logo:hover svg {
+    transform: scale(1.2);
+  }
+  
+  .iaPfuZ {
+    fill: rgb(184, 173, 210); 
+  }
+
+  .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+  }

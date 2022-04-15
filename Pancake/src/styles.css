@@ -56,12 +56,13 @@
 .modal-content {
     width: 400px;
     border-radius: 50px;
+  }
+
+/* html, body { 
+  height: 100%; 
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-/* .popover {
-    background-color: black;
+body { 
+  margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
 } */
-
