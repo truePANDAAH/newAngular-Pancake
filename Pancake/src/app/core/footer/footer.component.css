@@ -192,3 +192,35 @@ hr {
   fill: rgb(184, 173, 210); 
 }
 
+/* squashed button */
+.button-squashed {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 1rem;
+  border: 0px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: var(--primary-light-blue);
+  color: white;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  height: 32px;
+  padding: 0px 16px;
+  opacity: 1;
+}
+  
+.button-squashed:hover {
+  background-color: rgb(31, 199, 212, 0.65);
+}
+  
+.button-squashed:active {
+  background-color:  rgb(31, 199, 212, 0.85);
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.jKYZif {
+  fill: white;
+}
