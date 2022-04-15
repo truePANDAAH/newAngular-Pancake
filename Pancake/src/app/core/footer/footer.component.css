@@ -113,7 +113,8 @@ hr {
     background-color: white;
     overflow-y: auto;
     transform: translate(-50%, 0px);
-    left: 50%;
+    left: 100%;
+    bottom: 100%
   }
   
   .language:hover 
