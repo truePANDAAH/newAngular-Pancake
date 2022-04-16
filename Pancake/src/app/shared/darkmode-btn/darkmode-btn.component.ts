@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./darkmode-btn.component.css']
 })
 export class DarkmodeBtnComponent implements OnInit {
+   toggleDarkTheme(): void {
+    document.body.classList.toggle("dark-theme");
+  }
 
   constructor() { }
 

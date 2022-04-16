@@ -7,11 +7,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
-  status: boolean = false;
+status: boolean = true;
+
+  toggleDarkTheme(): void {
+    document.body.classList.toggle("dark-theme");
+  }
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  
 
 }
