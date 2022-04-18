@@ -27,6 +27,8 @@ import { TogglePancakeComponent } from './shared/toggle-pancake/toggle-pancake.c
 import { DarkmodeBtnComponent } from './shared/darkmode-btn/darkmode-btn.component';
 import { HttpClientModule } from '@angular/common/http'
 import { PancakeRoutingModule } from './pancake-routing.module';
+import { NftOverviewComponent } from './pages/nft-overview/nft-overview.component';
+import { FarmsComponent } from './pages/Earns/farms/farms.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +54,8 @@ import { PancakeRoutingModule } from './pancake-routing.module';
     ToggleSwitchComponent,
     TogglePancakeComponent,
     DarkmodeBtnComponent,
+    NftOverviewComponent,
+    FarmsComponent,
   ],
   imports: [
     BrowserModule,
