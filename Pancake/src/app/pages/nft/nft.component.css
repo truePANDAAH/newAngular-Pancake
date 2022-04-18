@@ -1,12 +1,12 @@
 *{
-    font-family: sans-serif;
+    font-family: kanit, sans-serif;
     text-decoration: none;
 }
 .nav-2{
     /* background-color: rgb(163, 216, 163); */
     display: flex;
     justify-content: center;
-    width:100%;
+    /* width:100%; */
     max-width: 1440px;
     height:42px;   
 }
@@ -48,13 +48,14 @@
     display: flex;
     align-items: center;
     max-width: 1440px;
-    width: 100%;
+    /* width: 100%; */
     height: 134.39px;
     background: linear-gradient(139.73deg, rgba(141, 240, 249 , 0.5),rgba(243, 239, 255,100%));
 }
 .nft-coll-h1{
     font-size: 48px;
-    color:rgb(118, 69, 217) ;
+    color:rgb(118, 69, 217);
+    margin-left: 150px;
 
 }
 /* qualche hover  */
@@ -65,29 +66,37 @@
 /* tabella con loghi e coin  */
 .tabella-nft-coll{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 100%;
-    height: 100%;
-
+    align-items: center;
+    /* width: 100%; */
+    /* height: 100%; */
+    border: 1px solid rgba(126, 125, 122, 0.4);
+    border-radius: 20px;
+    margin: 40px 150px;
+    padding: 0 40px;
 }
+
 th{
     color: rgb(118, 69, 217);
     /* border-radius: 10px; */
 }
 td{
     color: rgb(81, 46, 150);
+    margin-bottom: -1px;
 }
+
 th{
     font-size: 12px;
 }
  th, td {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(126, 125, 122, 0.4);
     padding-left: 10px;
     padding-bottom: 10px;
     padding-top: 10px;
   }
-table{
 
+table{
     width: 100%;
     max-width: 1200px;
     height: 100%;
@@ -169,4 +178,29 @@ span{
 .th-flex{
     display: flex;
     align-items: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 40px 0;
+}
+
+.arrow1 {
+    transform: rotate(180deg);
+}
+
+.arrow1,
+.arrow2 {
+    margin: 0 20px;
+}
+
+.pag-text {
+    font-family: kanit, sans-serif;
+    margin-bottom: 0px;
+    color: rgb(40, 13, 95);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
 }

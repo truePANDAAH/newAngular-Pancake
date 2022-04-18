@@ -25,7 +25,11 @@
   z-index: 900;
   width: 340px;
   height: 460px;
+<<<<<<< HEAD
   border-radius: 28px;
+=======
+  border-radius: 40px;
+>>>>>>> 5d589e45b47d8833b55c0681e5e62342875cf421
 }
 
 .modal-header {

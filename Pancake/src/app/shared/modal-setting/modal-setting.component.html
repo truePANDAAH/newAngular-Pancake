@@ -1,188 +1,151 @@
-<!-- <ng-template #content let-c="close" let-d="dismiss">
-    <div class="modal-header">
-      <h4 class="modal-title" id="modal-basic-title">Settings</h4>
-      <button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h2 class="title">Settings</h2>
+    <button class="cross-btn" (click)="d('Cross click')">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Modal Body -->
+  <div class="modal-body">
+    <p class="frst-line">GLOBAL</p>
+
+    <div class="dark-mode">
+      <p>Dark mode</p>
+      <app-darkmode-btn></app-darkmode-btn>
     </div>
-    <div class="modal-body">
-      <p>GLOBAL</p>
-      <div class="dark-mode">
-        <p>Dark mode</p>
 
-      </div>
-      <p>Default Transaction Speed (GWEI)</p>
+    <p class="trd-line">Default Transaction Speed (GWEI) 
+      <span class="popover__wrapper">
+        <svg viewBox="0 0 24 24" width="15px" xmlns="http://www.w3.org/2000/svg" fill="rgb(122, 110, 170)" class="qst-mark">
+          <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM11 16H13V18H11V16ZM12.61 6.04C10.55 5.748.73 7.01 8.18 8.83C8 9.41 8.44 10 9.05 10H9.25C9.66 10 9.99 9.71 10.13 9.33C10.45 8.44 11.4 7.83 12.43 8.05C13.38 8.25 14.08 9.18 14 10.15C13.9 11.49 12.38 11.78 11.5513.03C11.55 13.04 11.54 13.04 11.54 13.05C11.53 13.07 11.52 13.08 11.51 13.1C11.42 13.25 11.33 13.42 11.26 13.6C11.25 13.63 11.23 13.65 11.22 13.68C11.21 13.7 11.21 13.72 11.2 13.75C11.08 14.09 11 14.5 11 15H13C13 14.5813.11 14.23 13.28 13.93C13.3 13.9 13.31 13.87 13.33 13.84C13.41 13.7 13.51 13.57 13.61 13.45C13.62 13.44 13.63 13.42 13.6413.41C13.74 13.29 13.85 13.18 13.97 13.07C14.93 12.16 16.23 11.42 15.96 9.51C15.72 7.77 14.35 6.3 12.61 6.04Z"></path>
+        </svg>
+        <span class="popover__content">
+          <p class="popover__message">Adjusts the gas price (transaction fee) for your transaction. Higher GWEI = higher speed = higher fees</p>
+        </span>
+      </span>
+    </p>
 
-      <div class="three-btn">
-        <button class="button-squashed blue-btn">Standard (5)</button>
-        <button class="button-squashed gray-btn">Fast (6)</button>
-        <button class="button-squashed gray-btn">Instant (7)</button>
-      </div>
-
-      <hr>
-      <p>SWAPS & LIQUIDITY</p>
-      <p>Slippage Tolerance</p>
-
+    <div class="three-btn">
+      <button class="button-squashed blue-btn">Standard (5)</button>
+      <button class="button-squashed gray-btn central-btn">Fast (6)</button>
+      <button class="button-squashed gray-btn">Instant (7)</button>
     </div>
-  </ng-template>
+
+    <hr>
+
+    <p class="for-line">SWAPS & LIQUIDITY</p>
+    <p class="fif-line">Slippage Tolerance 
+      <span class="popover__wrapper">
+        <svg viewBox="0 0 24 24" width="15px" xmlns="http://www.w3.org/2000/svg" fill="rgb(122, 110, 170)" class="qst-mark">
+          <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM11 16H13V18H11V16ZM12.61 6.04C10.55 5.748.73 7.01 8.18 8.83C8 9.41 8.44 10 9.05 10H9.25C9.66 10 9.99 9.71 10.13 9.33C10.45 8.44 11.4 7.83 12.43 8.05C13.38 8.25 14.08 9.18 14 10.15C13.9 11.49 12.38 11.78 11.5513.03C11.55 13.04 11.54 13.04 11.54 13.05C11.53 13.07 11.52 13.08 11.51 13.1C11.42 13.25 11.33 13.42 11.26 13.6C11.25 13.63 11.23 13.65 11.22 13.68C11.21 13.7 11.21 13.72 11.2 13.75C11.08 14.09 11 14.5 11 15H13C13 14.5813.11 14.23 13.28 13.93C13.3 13.9 13.31 13.87 13.33 13.84C13.41 13.7 13.51 13.57 13.61 13.45C13.62 13.44 13.63 13.42 13.6413.41C13.74 13.29 13.85 13.18 13.97 13.07C14.93 12.16 16.23 11.42 15.96 9.51C15.72 7.77 14.35 6.3 12.61 6.04Z"></path>
+        </svg>
+        <span class="popover__content">
+          <p class="popover__message">Setting a high slippage tolerance can help transactions succeed, but you may not get such a good price. Use with caution.</p>
+        </span>
+      </span> 
+    </p>
+    <div class="scnd-three-btn">
+      <!-- <button (click)="toggleClass = !toggleClass" [ngClass]="{ 'left-btn-two': !toggleClass }" class="button-squashed left-btn" name="button1">{{ openButton() }}0.1%</button>
+      <button (click)="toggleSecondClass = !toggleSecondClass" [ngClass]="{ 'right-btn-two': !toggleSecondClass }"class="button-squashed gray-btn cntr-btn" name="button2">{{ openSecondButton() }}0.5%</button>
+      <button (click)="toggleThirdClass = !toggleThirdClass" [ngClass]="{ 'right-btn-two': !toggleThirdClass }" class="button-squashed right-btn" name="button3">{{ openThirdButton() }}1%</button> -->
+      <button (click)="percentButtonClassAssign($event)" [ngClass]="toggleClass ? 'left-btn' : 'left-btn-two'" class="button-squashed left-btn" name="button1">0.1%</button>
+      <button (click)="percentButtonClassAssign($event)" [ngClass]="toggleSecondClass ? 'left-btn' : 'left-btn-two'" class="button-squashed gray-btn cntr-btn" name="button2">0.5%</button>
+      <button (click)="percentButtonClassAssign($event)" [ngClass]="toggleThirdClass ? 'left-btn' : 'left-btn-two'" class="button-squashed right-btn" name="button3">1%</button>
+      <div class="me-4 mb-4">
+        <div>
+          <input class="general-field" type="text" pattern="^[0-9]+$" value="0.10"/><span class="percent-sign">%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="six-box">
+    <p class="six-line">Tx deadline (mins)
+      <span class="popover__wrapper">
+        <svg viewBox="0 0 24 24" width="15px" xmlns="http://www.w3.org/2000/svg" fill="rgb(122, 110, 170)" class="qst-mark">
+          <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM11 16H13V18H11V16ZM12.61 6.04C10.55 5.748.73 7.01 8.18 8.83C8 9.41 8.44 10 9.05 10H9.25C9.66 10 9.99 9.71 10.13 9.33C10.45 8.44 11.4 7.83 12.43 8.05C13.38 8.25 14.08 9.18 14 10.15C13.9 11.49 12.38 11.78 11.5513.03C11.55 13.04 11.54 13.04 11.54 13.05C11.53 13.07 11.52 13.08 11.51 13.1C11.42 13.25 11.33 13.42 11.26 13.6C11.25 13.63 11.23 13.65 11.22 13.68C11.21 13.7 11.21 13.72 11.2 13.75C11.08 14.09 11 14.5 11 15H13C13 14.5813.11 14.23 13.28 13.93C13.3 13.9 13.31 13.87 13.33 13.84C13.41 13.7 13.51 13.57 13.61 13.45C13.62 13.44 13.63 13.42 13.6413.41C13.74 13.29 13.85 13.18 13.97 13.07C14.93 12.16 16.23 11.42 15.96 9.51C15.72 7.77 14.35 6.3 12.61 6.04Z"></path>
+        </svg>
+        <span class="popover__content six-sev-nin-content">
+          <p class="popover__message">Your transaction will revert if it is left confirming for longer than this time.</p>
+        </span>
+      </span>
+    </p>
+    <div>
+      <input class="general-field" type="text" pattern="^[0-9]+$" value="20"/>
+    </div>
+  </div>
+    
+    <div class="sev-slider">
+    <p class="sev-line">Expert Mode
+      <span class="popover__wrapper">
+        <svg viewBox="0 0 24 24" width="15px" xmlns="http://www.w3.org/2000/svg" fill="rgb(122, 110, 170)" class="qst-mark">
+          <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM11 16H13V18H11V16ZM12.61 6.04C10.55 5.748.73 7.01 8.18 8.83C8 9.41 8.44 10 9.05 10H9.25C9.66 10 9.99 9.71 10.13 9.33C10.45 8.44 11.4 7.83 12.43 8.05C13.38 8.25 14.08 9.18 14 10.15C13.9 11.49 12.38 11.78 11.5513.03C11.55 13.04 11.54 13.04 11.54 13.05C11.53 13.07 11.52 13.08 11.51 13.1C11.42 13.25 11.33 13.42 11.26 13.6C11.25 13.63 11.23 13.65 11.22 13.68C11.21 13.7 11.21 13.72 11.2 13.75C11.08 14.09 11 14.5 11 15H13C13 14.5813.11 14.23 13.28 13.93C13.3 13.9 13.31 13.87 13.33 13.84C13.41 13.7 13.51 13.57 13.61 13.45C13.62 13.44 13.63 13.42 13.6413.41C13.74 13.29 13.85 13.18 13.97 13.07C14.93 12.16 16.23 11.42 15.96 9.51C15.72 7.77 14.35 6.3 12.61 6.04Z"></path>
+        </svg>
+        <span class="popover__content six-sev-nin-content">
+          <p class="popover__message">Bypasses confirmation modals and allows high slippage trades. Use at your own risk.</p>
+        </span>
+      </span>
+    </p>
+    <app-toggle-switch></app-toggle-switch>
+  </div>
+
+  <div class="eig-slider">
+    <p class="eig-line">Disable Multihops
+      <span class="popover__wrapper">
+        <svg viewBox="0 0 24 24" width="15px" xmlns="http://www.w3.org/2000/svg" fill="rgb(122, 110, 170)" class="qst-mark">
+          <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM11 16H13V18H11V16ZM12.61 6.04C10.55 5.748.73 7.01 8.18 8.83C8 9.41 8.44 10 9.05 10H9.25C9.66 10 9.99 9.71 10.13 9.33C10.45 8.44 11.4 7.83 12.43 8.05C13.38 8.25 14.08 9.18 14 10.15C13.9 11.49 12.38 11.78 11.5513.03C11.55 13.04 11.54 13.04 11.54 13.05C11.53 13.07 11.52 13.08 11.51 13.1C11.42 13.25 11.33 13.42 11.26 13.6C11.25 13.63 11.23 13.65 11.22 13.68C11.21 13.7 11.21 13.72 11.2 13.75C11.08 14.09 11 14.5 11 15H13C13 14.5813.11 14.23 13.28 13.93C13.3 13.9 13.31 13.87 13.33 13.84C13.41 13.7 13.51 13.57 13.61 13.45C13.62 13.44 13.63 13.42 13.6413.41C13.74 13.29 13.85 13.18 13.97 13.07C14.93 12.16 16.23 11.42 15.96 9.51C15.72 7.77 14.35 6.3 12.61 6.04Z"></path>
+        </svg>
+        <span class="popover__content eig-content1">
+          <p class="popover__message">Restricts swaps to direct pairs only.</p>
+        </span>
+      </span>
+    </p>
+    <app-toggle-switch></app-toggle-switch>
+  </div>
+
+  <div class="eig-slider">
+    <p class="eig-line">Subgraph Health Indicator
+      <span class="popover__wrapper">
+        <svg viewBox="0 0 24 24" width="15px" xmlns="http://www.w3.org/2000/svg" fill="rgb(122, 110, 170)" class="qst-mark">
+          <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM11 16H13V18H11V16ZM12.61 6.04C10.55 5.748.73 7.01 8.18 8.83C8 9.41 8.44 10 9.05 10H9.25C9.66 10 9.99 9.71 10.13 9.33C10.45 8.44 11.4 7.83 12.43 8.05C13.38 8.25 14.08 9.18 14 10.15C13.9 11.49 12.38 11.78 11.5513.03C11.55 13.04 11.54 13.04 11.54 13.05C11.53 13.07 11.52 13.08 11.51 13.1C11.42 13.25 11.33 13.42 11.26 13.6C11.25 13.63 11.23 13.65 11.22 13.68C11.21 13.7 11.21 13.72 11.2 13.75C11.08 14.09 11 14.5 11 15H13C13 14.5813.11 14.23 13.28 13.93C13.3 13.9 13.31 13.87 13.33 13.84C13.41 13.7 13.51 13.57 13.61 13.45C13.62 13.44 13.63 13.42 13.6413.41C13.74 13.29 13.85 13.18 13.97 13.07C14.93 12.16 16.23 11.42 15.96 9.51C15.72 7.77 14.35 6.3 12.61 6.04Z"></path>
+        </svg>
+        <span class="popover__content eig-content2">
+          <p class="popover__message">Turn on NFT market subgraph health indicator all the time. Default is to show the indicator only when the network is delayed</p>
+        </span>
+      </span>
+    </p>
+    <app-toggle-switch></app-toggle-switch>
+  </div>
   
-  <button class="btn btn-outline-primary mb-2 me-2 icon-button wheel-setting" (click)="openBackDropCustomClass(content)">
-    <svg  
+  <div class="nin-slider">
+    <p class="nin-line">Flippy sounds
+      <span class="popover__wrapper">
+        <svg viewBox="0 0 24 24" width="15px" xmlns="http://www.w3.org/2000/svg" fill="rgb(122, 110, 170)" class="qst-mark">
+          <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM11 16H13V18H11V16ZM12.61 6.04C10.55 5.748.73 7.01 8.18 8.83C8 9.41 8.44 10 9.05 10H9.25C9.66 10 9.99 9.71 10.13 9.33C10.45 8.44 11.4 7.83 12.43 8.05C13.38 8.25 14.08 9.18 14 10.15C13.9 11.49 12.38 11.78 11.5513.03C11.55 13.04 11.54 13.04 11.54 13.05C11.53 13.07 11.52 13.08 11.51 13.1C11.42 13.25 11.33 13.42 11.26 13.6C11.25 13.63 11.23 13.65 11.22 13.68C11.21 13.7 11.21 13.72 11.2 13.75C11.08 14.09 11 14.5 11 15H13C13 14.5813.11 14.23 13.28 13.93C13.3 13.9 13.31 13.87 13.33 13.84C13.41 13.7 13.51 13.57 13.61 13.45C13.62 13.44 13.63 13.42 13.6413.41C13.74 13.29 13.85 13.18 13.97 13.07C14.93 12.16 16.23 11.42 15.96 9.51C15.72 7.77 14.35 6.3 12.61 6.04Z"></path>
+        </svg>
+        <span class="popover__content six-sev-nin-content">
+          <p class="popover__message">Fun sounds to make a truly immersive pancake-flipping trading experience</p>
+        </span>
+      </span>
+    </p>
+    <app-toggle-pancake></app-toggle-pancake>
+  </div>
+
+  </div>
+</ng-template>
+
+<button class="btn btn-outline-primary mb-2 me-2 icon-button wheel-setting" (click)="openBackDropCustomClass(content)">
+  <svg  
     viewBox="0 0 24 24" 
     height="24" 
     width="24" 
     color="textSubtle" 
     xmlns="http://www.w3.org/2000/svg" 
     class="sc-bdnxRM cSawQi">
-    <path 
-      d="M19.43 12.98C19.47 12.66 19.5 12.34 19.5 12C19.5 11.66 19.47 11.34 19.43 11.02L21.54 9.37C21.73 9.22 21.78 8.95 21.66 8.73L19.66 5.27C19.54 5.05 19.27 4.97 19.05 5.05L16.56 6.05C16.04 5.65 15.48 5.32 14.87 5.07L14.49 2.42C14.46 2.18 14.25 2 14 2H9.99996C9.74996 2 9.53996 2.18 9.50996 2.42L9.12996 5.07C8.51996 5.32 7.95996 5.66 7.43996 6.05L4.94996 5.05C4.71996 4.96 4.45996 5.05 4.33996 5.27L2.33996 8.73C2.20996 8.95 2.26996 9.22 2.45996 9.37L4.56996 11.02C4.52996 11.34 4.49996 11.67 4.49996 12C4.49996 12.33 4.52996 12.66 4.56996 12.98L2.45996 14.63C2.26996 14.78 2.21996 15.05 2.33996 15.27L4.33996 18.73C4.45996 18.95 4.72996 19.03 4.94996 18.95L7.43996 17.95C7.95996 18.35 8.51996 18.68 9.12996 18.93L9.50996 21.58C9.53996 21.82 9.74996 22 9.99996 22H14C14.25 22 14.46 21.82 14.49 21.58L14.87 18.93C15.48 18.68 16.04 18.34 16.56 17.95L19.05 18.95C19.28 19.04 19.54 18.95 19.66 18.73L21.66 15.27C21.78 15.05 21.73 14.78 21.54 14.63L19.43 12.98ZM12 15.5C10.07 15.5 8.49996 13.93 8.49996 12C8.49996 10.07 10.07 8.5 12 8.5C13.93 8.5 15.5 10.07 15.5 12C15.5 13.93 13.93 15.5 12 15.5Z">
-    </path>
-  </svg></button> -->
-
-  <ng-template #content let-c="close" let-d="dismiss">
-    <div class="modal-header">
-      <h2 class="title">Settings</h2>
-      <button class="cross-btn" (click)="d('Cross click')">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-          <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-        </svg>
-      </button>
-    </div>
-    <div class="modal-body">
-      <p class="frst-line">GLOBAL</p>
-
-      <div class="dark-mode">
-        <p>Dark mode</p>
-        <app-darkmode-btn></app-darkmode-btn>
-      </div>
-
-      <p class="trd-line">Default Transaction Speed (GWEI) 
-        <span class="popover__wrapper">
-          <svg viewBox="0 0 24 24" width="15px" xmlns="http://www.w3.org/2000/svg" fill="rgb(122, 110, 170)" class="qst-mark">
-            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM11 16H13V18H11V16ZM12.61 6.04C10.55 5.748.73 7.01 8.18 8.83C8 9.41 8.44 10 9.05 10H9.25C9.66 10 9.99 9.71 10.13 9.33C10.45 8.44 11.4 7.83 12.43 8.05C13.38 8.25 14.08 9.18 14 10.15C13.9 11.49 12.38 11.78 11.5513.03C11.55 13.04 11.54 13.04 11.54 13.05C11.53 13.07 11.52 13.08 11.51 13.1C11.42 13.25 11.33 13.42 11.26 13.6C11.25 13.63 11.23 13.65 11.22 13.68C11.21 13.7 11.21 13.72 11.2 13.75C11.08 14.09 11 14.5 11 15H13C13 14.5813.11 14.23 13.28 13.93C13.3 13.9 13.31 13.87 13.33 13.84C13.41 13.7 13.51 13.57 13.61 13.45C13.62 13.44 13.63 13.42 13.6413.41C13.74 13.29 13.85 13.18 13.97 13.07C14.93 12.16 16.23 11.42 15.96 9.51C15.72 7.77 14.35 6.3 12.61 6.04Z"></path>
-          </svg>
-          <span class="popover__content">
-            <p class="popover__message">Adjusts the gas price (transaction fee) for your transaction. Higher GWEI = higher speed = higher fees</p>
-          </span>
-        </span>
-      </p>
-
-      <div class="three-btn">
-        <button class="button-squashed blue-btn">Standard (5)</button>
-        <button class="button-squashed gray-btn central-btn">Fast (6)</button>
-        <button class="button-squashed gray-btn">Instant (7)</button>
-      </div>
-
-      <hr>
-
-      <p class="for-line">SWAPS & LIQUIDITY</p>
-      <p class="fif-line">Slippage Tolerance 
-        <span class="popover__wrapper">
-          <svg viewBox="0 0 24 24" width="15px" xmlns="http://www.w3.org/2000/svg" fill="rgb(122, 110, 170)" class="qst-mark">
-            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM11 16H13V18H11V16ZM12.61 6.04C10.55 5.748.73 7.01 8.18 8.83C8 9.41 8.44 10 9.05 10H9.25C9.66 10 9.99 9.71 10.13 9.33C10.45 8.44 11.4 7.83 12.43 8.05C13.38 8.25 14.08 9.18 14 10.15C13.9 11.49 12.38 11.78 11.5513.03C11.55 13.04 11.54 13.04 11.54 13.05C11.53 13.07 11.52 13.08 11.51 13.1C11.42 13.25 11.33 13.42 11.26 13.6C11.25 13.63 11.23 13.65 11.22 13.68C11.21 13.7 11.21 13.72 11.2 13.75C11.08 14.09 11 14.5 11 15H13C13 14.5813.11 14.23 13.28 13.93C13.3 13.9 13.31 13.87 13.33 13.84C13.41 13.7 13.51 13.57 13.61 13.45C13.62 13.44 13.63 13.42 13.6413.41C13.74 13.29 13.85 13.18 13.97 13.07C14.93 12.16 16.23 11.42 15.96 9.51C15.72 7.77 14.35 6.3 12.61 6.04Z"></path>
-          </svg>
-          <span class="popover__content">
-            <p class="popover__message">Setting a high slippage tolerance can help transactions succeed, but you may not get such a good price. Use with caution.</p>
-          </span>
-        </span> 
-      </p>
-      <div class="scnd-three-btn">
-        <!-- <button (click)="toggleClass = !toggleClass" [ngClass]="{ 'left-btn-two': !toggleClass }" class="button-squashed left-btn" name="button1">{{ openButton() }}0.1%</button>
-        <button (click)="toggleSecondClass = !toggleSecondClass" [ngClass]="{ 'right-btn-two': !toggleSecondClass }"class="button-squashed gray-btn cntr-btn" name="button2">{{ openSecondButton() }}0.5%</button>
-        <button (click)="toggleThirdClass = !toggleThirdClass" [ngClass]="{ 'right-btn-two': !toggleThirdClass }" class="button-squashed right-btn" name="button3">{{ openThirdButton() }}1%</button> -->
-        <button (click)="percentButtonClassAssign($event)" [ngClass]="toggleClass ? 'left-btn' : 'left-btn-two'" class="button-squashed left-btn" name="button1">0.1%</button>
-        <button (click)="percentButtonClassAssign($event)" [ngClass]="toggleSecondClass ? 'left-btn' : 'left-btn-two'" class="button-squashed gray-btn cntr-btn" name="button2">0.5%</button>
-        <button (click)="percentButtonClassAssign($event)" [ngClass]="toggleThirdClass ? 'left-btn' : 'left-btn-two'" class="button-squashed right-btn" name="button3">1%</button>
-        <div class="me-4 mb-4">
-          <div>
-            <input class="general-field" type="text" pattern="^[0-9]+$" value="0.10"/><span class="percent-sign">%</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="six-box">
-      <p class="six-line">Tx deadline (mins)
-        <span class="popover__wrapper">
-          <svg viewBox="0 0 24 24" width="15px" xmlns="http://www.w3.org/2000/svg" fill="rgb(122, 110, 170)" class="qst-mark">
-            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM11 16H13V18H11V16ZM12.61 6.04C10.55 5.748.73 7.01 8.18 8.83C8 9.41 8.44 10 9.05 10H9.25C9.66 10 9.99 9.71 10.13 9.33C10.45 8.44 11.4 7.83 12.43 8.05C13.38 8.25 14.08 9.18 14 10.15C13.9 11.49 12.38 11.78 11.5513.03C11.55 13.04 11.54 13.04 11.54 13.05C11.53 13.07 11.52 13.08 11.51 13.1C11.42 13.25 11.33 13.42 11.26 13.6C11.25 13.63 11.23 13.65 11.22 13.68C11.21 13.7 11.21 13.72 11.2 13.75C11.08 14.09 11 14.5 11 15H13C13 14.5813.11 14.23 13.28 13.93C13.3 13.9 13.31 13.87 13.33 13.84C13.41 13.7 13.51 13.57 13.61 13.45C13.62 13.44 13.63 13.42 13.6413.41C13.74 13.29 13.85 13.18 13.97 13.07C14.93 12.16 16.23 11.42 15.96 9.51C15.72 7.77 14.35 6.3 12.61 6.04Z"></path>
-          </svg>
-          <span class="popover__content six-sev-nin-content">
-            <p class="popover__message">Your transaction will revert if it is left confirming for longer than this time.</p>
-          </span>
-        </span>
-      </p>
-      <div>
-        <input class="general-field" type="text" pattern="^[0-9]+$" value="20"/>
-      </div>
-    </div>
-      
-      <div class="sev-slider">
-      <p class="sev-line">Expert Mode
-        <span class="popover__wrapper">
-          <svg viewBox="0 0 24 24" width="15px" xmlns="http://www.w3.org/2000/svg" fill="rgb(122, 110, 170)" class="qst-mark">
-            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM11 16H13V18H11V16ZM12.61 6.04C10.55 5.748.73 7.01 8.18 8.83C8 9.41 8.44 10 9.05 10H9.25C9.66 10 9.99 9.71 10.13 9.33C10.45 8.44 11.4 7.83 12.43 8.05C13.38 8.25 14.08 9.18 14 10.15C13.9 11.49 12.38 11.78 11.5513.03C11.55 13.04 11.54 13.04 11.54 13.05C11.53 13.07 11.52 13.08 11.51 13.1C11.42 13.25 11.33 13.42 11.26 13.6C11.25 13.63 11.23 13.65 11.22 13.68C11.21 13.7 11.21 13.72 11.2 13.75C11.08 14.09 11 14.5 11 15H13C13 14.5813.11 14.23 13.28 13.93C13.3 13.9 13.31 13.87 13.33 13.84C13.41 13.7 13.51 13.57 13.61 13.45C13.62 13.44 13.63 13.42 13.6413.41C13.74 13.29 13.85 13.18 13.97 13.07C14.93 12.16 16.23 11.42 15.96 9.51C15.72 7.77 14.35 6.3 12.61 6.04Z"></path>
-          </svg>
-          <span class="popover__content six-sev-nin-content">
-            <p class="popover__message">Bypasses confirmation modals and allows high slippage trades. Use at your own risk.</p>
-          </span>
-        </span>
-      </p>
-      <app-toggle-switch></app-toggle-switch>
-    </div>
-
-    <div class="eig-slider">
-      <p class="eig-line">Disable Multihops
-        <span class="popover__wrapper">
-          <svg viewBox="0 0 24 24" width="15px" xmlns="http://www.w3.org/2000/svg" fill="rgb(122, 110, 170)" class="qst-mark">
-            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM11 16H13V18H11V16ZM12.61 6.04C10.55 5.748.73 7.01 8.18 8.83C8 9.41 8.44 10 9.05 10H9.25C9.66 10 9.99 9.71 10.13 9.33C10.45 8.44 11.4 7.83 12.43 8.05C13.38 8.25 14.08 9.18 14 10.15C13.9 11.49 12.38 11.78 11.5513.03C11.55 13.04 11.54 13.04 11.54 13.05C11.53 13.07 11.52 13.08 11.51 13.1C11.42 13.25 11.33 13.42 11.26 13.6C11.25 13.63 11.23 13.65 11.22 13.68C11.21 13.7 11.21 13.72 11.2 13.75C11.08 14.09 11 14.5 11 15H13C13 14.5813.11 14.23 13.28 13.93C13.3 13.9 13.31 13.87 13.33 13.84C13.41 13.7 13.51 13.57 13.61 13.45C13.62 13.44 13.63 13.42 13.6413.41C13.74 13.29 13.85 13.18 13.97 13.07C14.93 12.16 16.23 11.42 15.96 9.51C15.72 7.77 14.35 6.3 12.61 6.04Z"></path>
-          </svg>
-          <span class="popover__content eig-content1">
-            <p class="popover__message">Restricts swaps to direct pairs only.</p>
-          </span>
-        </span>
-      </p>
-      <app-toggle-switch></app-toggle-switch>
-    </div>
-
-    <div class="eig-slider">
-      <p class="eig-line">Subgraph Health Indicator
-        <span class="popover__wrapper">
-          <svg viewBox="0 0 24 24" width="15px" xmlns="http://www.w3.org/2000/svg" fill="rgb(122, 110, 170)" class="qst-mark">
-            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM11 16H13V18H11V16ZM12.61 6.04C10.55 5.748.73 7.01 8.18 8.83C8 9.41 8.44 10 9.05 10H9.25C9.66 10 9.99 9.71 10.13 9.33C10.45 8.44 11.4 7.83 12.43 8.05C13.38 8.25 14.08 9.18 14 10.15C13.9 11.49 12.38 11.78 11.5513.03C11.55 13.04 11.54 13.04 11.54 13.05C11.53 13.07 11.52 13.08 11.51 13.1C11.42 13.25 11.33 13.42 11.26 13.6C11.25 13.63 11.23 13.65 11.22 13.68C11.21 13.7 11.21 13.72 11.2 13.75C11.08 14.09 11 14.5 11 15H13C13 14.5813.11 14.23 13.28 13.93C13.3 13.9 13.31 13.87 13.33 13.84C13.41 13.7 13.51 13.57 13.61 13.45C13.62 13.44 13.63 13.42 13.6413.41C13.74 13.29 13.85 13.18 13.97 13.07C14.93 12.16 16.23 11.42 15.96 9.51C15.72 7.77 14.35 6.3 12.61 6.04Z"></path>
-          </svg>
-          <span class="popover__content eig-content2">
-            <p class="popover__message">Turn on NFT market subgraph health indicator all the time. Default is to show the indicator only when the network is delayed</p>
-          </span>
-        </span>
-      </p>
-      <app-toggle-switch></app-toggle-switch>
-    </div>
-    
-    <div class="nin-slider">
-      <p class="nin-line">Flippy sounds
-        <span class="popover__wrapper">
-          <svg viewBox="0 0 24 24" width="15px" xmlns="http://www.w3.org/2000/svg" fill="rgb(122, 110, 170)" class="qst-mark">
-            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM11 16H13V18H11V16ZM12.61 6.04C10.55 5.748.73 7.01 8.18 8.83C8 9.41 8.44 10 9.05 10H9.25C9.66 10 9.99 9.71 10.13 9.33C10.45 8.44 11.4 7.83 12.43 8.05C13.38 8.25 14.08 9.18 14 10.15C13.9 11.49 12.38 11.78 11.5513.03C11.55 13.04 11.54 13.04 11.54 13.05C11.53 13.07 11.52 13.08 11.51 13.1C11.42 13.25 11.33 13.42 11.26 13.6C11.25 13.63 11.23 13.65 11.22 13.68C11.21 13.7 11.21 13.72 11.2 13.75C11.08 14.09 11 14.5 11 15H13C13 14.5813.11 14.23 13.28 13.93C13.3 13.9 13.31 13.87 13.33 13.84C13.41 13.7 13.51 13.57 13.61 13.45C13.62 13.44 13.63 13.42 13.6413.41C13.74 13.29 13.85 13.18 13.97 13.07C14.93 12.16 16.23 11.42 15.96 9.51C15.72 7.77 14.35 6.3 12.61 6.04Z"></path>
-          </svg>
-          <span class="popover__content six-sev-nin-content">
-            <p class="popover__message">Fun sounds to make a truly immersive pancake-flipping trading experience</p>
-          </span>
-        </span>
-      </p>
-      <app-toggle-pancake></app-toggle-pancake>
-    </div>
-
-    </div>
-  </ng-template>
-  
-  <button class="btn btn-outline-primary mb-2 me-2 icon-button wheel-setting" (click)="openBackDropCustomClass(content)">
-    <svg  
-      viewBox="0 0 24 24" 
-      height="24" 
-      width="24" 
-      color="textSubtle" 
-      xmlns="http://www.w3.org/2000/svg" 
-      class="sc-bdnxRM cSawQi">
-        <path 
-          d="M19.43 12.98C19.47 12.66 19.5 12.34 19.5 12C19.5 11.66 19.47 11.34 19.43 11.02L21.54 9.37C21.73 9.22 21.78 8.95 21.66 8.73L19.66 5.27C19.54 5.05 19.27 4.97 19.05 5.05L16.56 6.05C16.04 5.65 15.48 5.32 14.87 5.07L14.49 2.42C14.46 2.18 14.25 2 14 2H9.99996C9.74996 2 9.53996 2.18 9.50996 2.42L9.12996 5.07C8.51996 5.32 7.95996 5.66 7.43996 6.05L4.94996 5.05C4.71996 4.96 4.45996 5.05 4.33996 5.27L2.33996 8.73C2.20996 8.95 2.26996 9.22 2.45996 9.37L4.56996 11.02C4.52996 11.34 4.49996 11.67 4.49996 12C4.49996 12.33 4.52996 12.66 4.56996 12.98L2.45996 14.63C2.26996 14.78 2.21996 15.05 2.33996 15.27L4.33996 18.73C4.45996 18.95 4.72996 19.03 4.94996 18.95L7.43996 17.95C7.95996 18.35 8.51996 18.68 9.12996 18.93L9.50996 21.58C9.53996 21.82 9.74996 22 9.99996 22H14C14.25 22 14.46 21.82 14.49 21.58L14.87 18.93C15.48 18.68 16.04 18.34 16.56 17.95L19.05 18.95C19.28 19.04 19.54 18.95 19.66 18.73L21.66 15.27C21.78 15.05 21.73 14.78 21.54 14.63L19.43 12.98ZM12 15.5C10.07 15.5 8.49996 13.93 8.49996 12C8.49996 10.07 10.07 8.5 12 8.5C13.93 8.5 15.5 10.07 15.5 12C15.5 13.93 13.93 15.5 12 15.5Z">
-        </path>
-    </svg>
-  </button>
+      <path 
+        d="M19.43 12.98C19.47 12.66 19.5 12.34 19.5 12C19.5 11.66 19.47 11.34 19.43 11.02L21.54 9.37C21.73 9.22 21.78 8.95 21.66 8.73L19.66 5.27C19.54 5.05 19.27 4.97 19.05 5.05L16.56 6.05C16.04 5.65 15.48 5.32 14.87 5.07L14.49 2.42C14.46 2.18 14.25 2 14 2H9.99996C9.74996 2 9.53996 2.18 9.50996 2.42L9.12996 5.07C8.51996 5.32 7.95996 5.66 7.43996 6.05L4.94996 5.05C4.71996 4.96 4.45996 5.05 4.33996 5.27L2.33996 8.73C2.20996 8.95 2.26996 9.22 2.45996 9.37L4.56996 11.02C4.52996 11.34 4.49996 11.67 4.49996 12C4.49996 12.33 4.52996 12.66 4.56996 12.98L2.45996 14.63C2.26996 14.78 2.21996 15.05 2.33996 15.27L4.33996 18.73C4.45996 18.95 4.72996 19.03 4.94996 18.95L7.43996 17.95C7.95996 18.35 8.51996 18.68 9.12996 18.93L9.50996 21.58C9.53996 21.82 9.74996 22 9.99996 22H14C14.25 22 14.46 21.82 14.49 21.58L14.87 18.93C15.48 18.68 16.04 18.34 16.56 17.95L19.05 18.95C19.28 19.04 19.54 18.95 19.66 18.73L21.66 15.27C21.78 15.05 21.73 14.78 21.54 14.63L19.43 12.98ZM12 15.5C10.07 15.5 8.49996 13.93 8.49996 12C8.49996 10.07 10.07 8.5 12 8.5C13.93 8.5 15.5 10.07 15.5 12C15.5 13.93 13.93 15.5 12 15.5Z">
+      </path>
+  </svg>
+</button>

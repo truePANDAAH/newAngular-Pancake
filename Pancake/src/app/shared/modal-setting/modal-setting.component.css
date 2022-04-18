@@ -1,3 +1,28 @@
+/* Bottone */
+.icon-button {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.wheel-setting {
+  margin-right: 0.75rem;
+  margin-left: 0.25rem;
+}
+
+.cSawQi {
+  fill: rgb(122, 110, 170);
+}
+
+.icon-button:hover {
+  opacity: 0.65;
+  background-color: transparent;
+  border: none;
+}
+
 /* Contenitore pop-up */
 .title {
   font-family: Kanit, sans-serif;
@@ -72,9 +97,16 @@
   height: 80px;
 }
 
+.modal-body {
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
 .modal-header,
 .modal-body {
   padding: 24px;
+  width: 400px;
+  background-color: white;
 }
 
 .btn-outline-primary {
@@ -86,31 +118,6 @@
 .btn:focus {
   outline: 0;
   box-shadow: none;
-}
-  
-/* Bottone */
-.icon-button {
-  display: flex;
-  height: 100%;
-  align-items: center;
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-}
-
-.wheel-setting {
-  margin-right: 0.75rem;
-  margin-left: 0.25rem;
-}
-
-.cSawQi {
-  fill: rgb(122, 110, 170);
-}
-
-.icon-button:hover {
-  opacity: 0.65;
-  background-color: transparent;
-  border: none;
 }
 
 .btn {
@@ -129,7 +136,7 @@
 
 .three-btn {
   display: flex;
-  justify-content: space-between
+  justify-content: flex-start
 }
 
 .blue-btn {
