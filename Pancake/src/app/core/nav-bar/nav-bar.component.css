@@ -383,3 +383,19 @@
       display: none;
     }
   }
+
+  .luca-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .luca {
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+  }
+
+  .luca:hover {
+    cursor: pointer;
+    border: 2px solid rgba(0, 148, 255, 0.8);
+  }
