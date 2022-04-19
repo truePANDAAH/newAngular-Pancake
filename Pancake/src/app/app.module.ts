@@ -22,6 +22,9 @@ import { CollapseForButtonsComponent } from './pages/design-system/collapse-for-
 import { FooterComponent } from './core/footer/footer.component';
 import { StartInSecondsComponent } from './core/start-in-seconds/start-in-seconds.component';
 
+
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { NftComponent } from './pages/nft/nft.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +45,8 @@ import { StartInSecondsComponent } from './core/start-in-seconds/start-in-second
     CollapseForButtonsComponent,
     FooterComponent,
     StartInSecondsComponent,
-  
+    HomePageComponent,
+    NftComponent,
   ],
   imports: [
     BrowserModule,

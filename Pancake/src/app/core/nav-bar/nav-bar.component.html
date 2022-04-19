@@ -89,6 +89,18 @@
             <div class="dropdown-content">
               <a href="#">Exchange</a>
               <a href="#">Liquidity</a>
+              <a href="#">Perpetual
+                <svg 
+                  viewBox="0 0 24 24" 
+                  color="text" 
+                  width="20px" 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  class="sc-5a69fd5e-0 fIBjTm">
+                  <path 
+                    d="M16.3 8.09014C15.91 8.48014 15.91 9.10014 16.3 9.49014L18.2 11.3901H9C8.45 11.3901 8 11.8401 8 12.3901C8 12.9401 8.45 13.3901 9 13.3901H18.2L16.3 15.2901C15.91 15.6801 15.91 16.3001 16.3 16.6901C16.69 17.0801 17.31 17.0801 17.7 16.6901L21.29 13.1001C21.68 12.7101 21.68 12.0801 21.29 11.6901L17.7 8.09014C17.31 7.70014 16.69 7.70014 16.3 8.09014ZM4 19.3901H11C11.55 19.3901 12 19.8401 12 20.3901C12 20.9401 11.55 21.3901 11 21.3901H4C2.9 21.3901 2 20.4901 2 19.3901V5.39014C2 4.29014 2.9 3.39014 4 3.39014H11C11.55 3.39014 12 3.84014 12 4.39014C12 4.94014 11.55 5.39014 11 5.39014H4V19.3901Z">
+                  </path>
+                </svg>
+              </a>
             </div>
           </div>
     
@@ -104,9 +116,16 @@
     
           <div class="dropdown">
             <div class="drop-btn">
-              <a href="#">Win</a>
+              <a class="dots" href="#">Win</a>
             </div>
             <div class="dropdown-content">
+              <a href="#">Trading Competition
+                <div 
+                  color="warning" 
+                  font-size="14px" 
+                  class="yellow-warning">SOON
+                </div>
+              </a>
               <a href="#">Prediction (BETA)</a>
               <a href="#">Lottery</a>
             </div>
@@ -124,7 +143,7 @@
     
           <div class="dropdown">
             <div class="drop-btn">
-              <a class="dots" href="#">
+              <a href="#">
                 <svg 
                   xmlns="http://www.w3.org/2000/svg" 
                   width="16" 
@@ -139,11 +158,11 @@
             <div class="dropdown-content">
               <a href="#">Info</a>
               <a href="#">IFO
-                <div 
+                <!--<div 
                   color="warning" 
                   font-size="14px" 
                   class="yellow-warning">SOON
-                </div>
+                </div>-->
               </a>
               <a href="#">Voting</a>
               <hr>
@@ -366,21 +385,9 @@
           </div>
         </div>
     
-        <button class="icon-button wheel-setting">
-          <svg  
-            viewBox="0 0 24 24" 
-            height="24" 
-            width="24" 
-            color="textSubtle" 
-            xmlns="http://www.w3.org/2000/svg" 
-            class="sc-bdnxRM cSawQi">
-            <path 
-              d="M19.43 12.98C19.47 12.66 19.5 12.34 19.5 12C19.5 11.66 19.47 11.34 19.43 11.02L21.54 9.37C21.73 9.22 21.78 8.95 21.66 8.73L19.66 5.27C19.54 5.05 19.27 4.97 19.05 5.05L16.56 6.05C16.04 5.65 15.48 5.32 14.87 5.07L14.49 2.42C14.46 2.18 14.25 2 14 2H9.99996C9.74996 2 9.53996 2.18 9.50996 2.42L9.12996 5.07C8.51996 5.32 7.95996 5.66 7.43996 6.05L4.94996 5.05C4.71996 4.96 4.45996 5.05 4.33996 5.27L2.33996 8.73C2.20996 8.95 2.26996 9.22 2.45996 9.37L4.56996 11.02C4.52996 11.34 4.49996 11.67 4.49996 12C4.49996 12.33 4.52996 12.66 4.56996 12.98L2.45996 14.63C2.26996 14.78 2.21996 15.05 2.33996 15.27L4.33996 18.73C4.45996 18.95 4.72996 19.03 4.94996 18.95L7.43996 17.95C7.95996 18.35 8.51996 18.68 9.12996 18.93L9.50996 21.58C9.53996 21.82 9.74996 22 9.99996 22H14C14.25 22 14.46 21.82 14.49 21.58L14.87 18.93C15.48 18.68 16.04 18.34 16.56 17.95L19.05 18.95C19.28 19.04 19.54 18.95 19.66 18.73L21.66 15.27C21.78 15.05 21.73 14.78 21.54 14.63L19.43 12.98ZM12 15.5C10.07 15.5 8.49996 13.93 8.49996 12C8.49996 10.07 10.07 8.5 12 8.5C13.93 8.5 15.5 10.07 15.5 12C15.5 13.93 13.93 15.5 12 15.5Z">
-            </path>
-          </svg>
-        </button>
-    
-        <button class="btn1-wallet">Connect Wallet</button>
+        <app-modal-setting class="wheel"></app-modal-setting>
+        
+        <app-modal-connect-wallet class="btn1-wallet"></app-modal-connect-wallet>
       </div>
     </nav>
   </header>
