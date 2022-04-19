@@ -25,6 +25,14 @@ import { StartInSecondsComponent } from './core/start-in-seconds/start-in-second
 
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { NftComponent } from './pages/nft/nft.component';
+import { ToggleSwitchComponent } from './shared/toggle-switch/toggle-switch.component';
+import { TogglePancakeComponent } from './shared/toggle-pancake/toggle-pancake.component';
+import { DarkmodeBtnComponent } from './shared/darkmode-btn/darkmode-btn.component';
+import { HttpClientModule } from '@angular/common/http'
+import { PancakeRoutingModule } from './pancake-routing.module';
+import { NftOverviewComponent } from './pages/nft-overview/nft-overview.component';
+import { FarmsComponent } from './pages/Earns/farms/farms.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,10 +55,17 @@ import { NftComponent } from './pages/nft/nft.component';
     StartInSecondsComponent,
     HomePageComponent,
     NftComponent,
+    ToggleSwitchComponent,
+    TogglePancakeComponent,
+    DarkmodeBtnComponent,
+    NftOverviewComponent,
+    FarmsComponent,
   ],
   imports: [
     BrowserModule,
     NgbModule,
+    HttpClientModule,
+    PancakeRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

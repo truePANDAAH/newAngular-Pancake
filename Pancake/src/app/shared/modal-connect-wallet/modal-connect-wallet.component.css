@@ -1,12 +1,21 @@
+*{
+  font-family: 'kanit', sans-serif;
+}
 .btn-base {
   border: none;
   background-color: transparent;
   color: white;
-  font-family: 'Kanit';
+  font-family: 'Kanit',sans-serif;
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.03em;
   line-height: 1;
+}
+
+.btn1-wallet:active {
+  background-color:  rgb(31, 199, 212, 0.85);
+  transform: translateY(1px);
+  box-shadow: none;
 }
 
 .modal-content {
@@ -19,7 +28,7 @@
   z-index: 900;
   width: 340px;
   height: 460px;
-  border-radius: 28px;
+  border-radius: 40px;
 }
 
 .modal-header {
@@ -29,8 +38,8 @@
   background: linear-gradient(139.73deg, rgb(229, 253, 255) 0%, rgb(243, 239, 255) 100%);
   border-bottom: 1px solid rgb(231, 227, 235);
   padding: 12px 24px;
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
+  border-top-right-radius: 47px; /*erano a 25*/
+  border-top-left-radius: 47px;
 }
 
 .modal-title {
