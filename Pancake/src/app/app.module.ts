@@ -20,6 +20,9 @@ import { CopyButtonComponent } from './pages/design-system/copy-button/copy-butt
 import { LogosAccordionComponent } from './pages/design-system/logos-accordion/logos-accordion.component';
 import { CollapseForButtonsComponent } from './pages/design-system/collapse-for-buttons/collapse-for-buttons.component';
 import { FooterComponent } from './core/footer/footer.component';
+import { StartInSecondsComponent } from './core/start-in-seconds/start-in-seconds.component';
+
+
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { NftComponent } from './pages/nft/nft.component';
 import { ToggleSwitchComponent } from './shared/toggle-switch/toggle-switch.component';
@@ -49,6 +52,7 @@ import { FarmsComponent } from './pages/Earns/farms/farms.component';
     LogosAccordionComponent,
     CollapseForButtonsComponent,
     FooterComponent,
+    StartInSecondsComponent,
     HomePageComponent,
     NftComponent,
     ToggleSwitchComponent,
