@@ -834,18 +834,7 @@ main {
   line-height: 1.1;
 }
 
-.box1,
-.box2,
-.box3,
-.box4,
-.box5 {
-  height: 80px;
-}
-
-.box2,
-.box3,
-.box4,
-.box5 {
+.box1 {
   border-left: 1px solid #d7caec;
   padding-left: 20px;
   height: 80px;
@@ -854,8 +843,17 @@ main {
 .second-boxes {
   margin-left: 30px;
 }
+.changing-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.change-box {
+  order: 0;
+}
 
 .change-box2 {
+  order: 1;
   visibility: hidden
 }
 /* panda */

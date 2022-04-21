@@ -282,6 +282,7 @@
     </div>
   </div>
 
+    <div class="changing-box">
   <div class="change-box" (click)="status=!status" [ngClass]="status ? 'change-box2' : 'change-box'">
     <div class="change-box-text">
       <h3>Top <span>Farms</span></h3>
@@ -293,34 +294,10 @@
     </div>
 
     <div class="first-boxes">
-      <div class="box1">
-        <p class="par1">GMI-BNB LP</p>
-        <p class="par2">167.562%</p>
-        <p class="par3">APR</p>
-      </div>
-
-      <div class="box2">
-        <p class="par1">BCOIN-BNB</p>
-        <p class="par2">165.905%</p>
-        <p class="par3">APR</p>
-      </div>
-
-      <div class="box3">
-        <p class="par1">FINA-BUSD LP</p>
-        <p class="par2">163.100%</p>
-        <p class="par3">APR</p>
-      </div>
-
-      <div class="box4">
-        <p class="par1">TINC-BNB LP</p>
-        <p class="par2">153.890%</p>
-        <p class="par3">APR</p>
-      </div>
-
-      <div class="box5">
-        <p class="par1">ERA-BNB LP</p>
-        <p class="par2">143.363%</p>
-        <p class="par3">APR</p>
+      <div class="box1" *ngFor="let farm of farms">
+        <p class="par1">{{ farm.title }}</p>
+        <p class="par2">{{ farm.price }}%</p>
+        <p class="par3">{{ farm.value }}</p>
       </div>
     </div>
   </div>
@@ -335,13 +312,13 @@
       </div>
 
       <div class="second-boxes">
-        <div class="box1">
-          <p class="par1">Stake CAKE - Earn GMI</p>
-          <p class="par2">70.267%</p>
-          <p class="par3">APR</p>
+        <div class="box1" *ngFor="let syrup of syrups">
+          <p class="par1">{{ syrup.title }}</p>
+          <p class="par2">{{ syrup.price }}%</p>
+          <p class="par3">{{ syrup.value }}</p>
         </div>
 
-        <div class="box2">
+        <!-- <div class="box2">
           <p class="par1">Stake CAKE - Earn TINC</p>
           <p class="par2">69.876%</p>
           <p class="par3">APR</p>
@@ -363,9 +340,10 @@
           <p class="par1">Stake CAKE - Earn DUET</p>
           <p class="par2">69.194%</p>
           <p class="par3">APR</p>
-        </div>
+        </div> -->
       </div>
     </div>
+  </div>
   </div>
 </section>
 <!-- panda -->
@@ -475,4 +453,3 @@
 </section>
 
 </main>
-

@@ -126,7 +126,8 @@ hr {
   background-color: white;
   overflow-y: auto;
   transform: translate(-50%, 0px);
-  left: 50%;
+  left: 100%;
+  bottom: 100%;
 }
 
 .language:hover 
@@ -223,4 +224,247 @@ hr {
 
 .jKYZif {
   fill: white;
+}
+
+.containerFlexPancake{
+  width: 100vw;
+  height: 60vh;
+  background-color: #7645d9;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  
+}
+
+.pancake1{
+  
+  width: 330px;
+  height: 280px;
+  align-self: flex-start;
+  /* background-color: white; */
+  margin: 10px;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; */
+  overflow: hidden;
+}
+
+@keyframes pancake-opacity{
+  from {margin-top: 0;}
+  to {
+      margin-top: 16px;
+      margin-left: 24px;
+  }
+}
+
+.pancake-opacity{
+  position: relative;
+  align-self: flex-start;
+  width: 300px;
+  height: 300px;
+  /* background-color: red; */
+  animation-name: pancake-opacity;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background-image: url(../../../assets/cake-opacity.png);
+  background-repeat: no-repeat;
+  background-position:top;
+  background-size: cover;
+  
+  
+}
+
+
+
+.pancake-top{
+  margin-top: -300px;
+  margin-left: -80px;
+  position: absolute;
+  width: 35%;
+  height: 35%;
+  /* background-color: yellow; */
+  animation-name: firstBlock;
+  animation-duration: 2s;
+  animation: alternate;
+  background-image: url(../../../assets/top.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+ 
+
+}
+
+
+.pancake-bot{
+  margin-top: -270px;
+  margin-left: -140px;
+  position: absolute;
+  width: 35%;
+  height: 35%;
+  /* background-color: yellow; */
+  animation-name: pancakeTop;
+  animation-duration: 2s;
+  animation: alternate;
+  background-image: url(../../../assets/bottom.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+  /* background-color: cadetblue; */
+
+}
+
+
+.mainSet{
+  width: 500px;
+  height:270px;
+  text-align: center;
+  color: white;
+  font-family: Kanit, sans-serif;
+}
+
+.mainSet h1 {
+  font-weight: bold;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.toStart{
+  color: rgb(31, 199, 212);
+  font-weight: bold;
+  font-family: Kanit, sans-serif;
+  text-decoration: none;
+}
+
+.toStart:hover{
+  text-decoration:underline;
+}
+
+.wallet-btn{
+  margin-top: 20px;
+  border-radius: 1rem;
+  border: 0px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: Kanit, sans-serif;
+  background-color: rgb(31, 199, 212);
+  color: white;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  width: 10.313rem;
+  height: 3rem;
+  opacity: 1;
+}
+
+
+
+.pancake2{
+  width: 330px;
+  height: 280px;
+  background-color: white;
+  align-self: flex-end;
+  margin-bottom: 24px;
+  overflow: hidden;
+  background-color: #7645d9;
+}
+
+@keyframes secondBlock {
+  from {
+       margin-top: 0px;
+       }
+       
+  to {
+      margin-top: 20px;
+  }
+
+  to {
+      margin-left: 20px;
+  }
+  
+}
+.cake-top1{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-image: url(../../../assets/flying-cake/cake-top1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation-name: secondBlock;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  
+  
+
+
+}
+
+.cake-op{
+  position: absolute;
+  background-image: url(../../../assets/flying-cake/cake-op1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-color: brown; */
+  width: 300px;
+  height: 300px;
+  margin-top: -340px;
+  margin-left: 50px;
+
+
+}
+
+.cake-bot1{
+  position: absolute;
+  background-image: url(../../../assets/flying-cake/cake-bot1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-color: brown; */
+  width: 300px;
+  height: 300px;
+  margin-top: -300px;
+}
+
+.btn2-wallet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  border: 0px;
+  font-family: 'Kanit', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: rgb(31, 199, 212);
+  color: white;
+  box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  height: 48px;
+  padding: 0 24px;
+  opacity: 1;
+  margin-right: 0.5rem;
+  width: 200px;
+  margin-left: 150px;
+  margin-top: 20px;
+}
+
+.btn2-wallet:hover {
+  background-color: rgb(31, 199, 212, 0.65);
+}
+
+.btn2-wallet:active {
+  background-color: rgb(31, 199, 212, 0.85);
+  transform: translateY(1px);
+  box-shadow: none;
 }
